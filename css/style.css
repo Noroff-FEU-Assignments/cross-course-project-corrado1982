@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    background-color: #FF4809;
+    align-items: flex-end;
+    
+}
+
+.logo {
+    width: 384px;
+}
+
+ul{
+
+
+}
+nav li {
+    display: inline-block;
+    align-items: center;
+
+}
+
+.current {
+    text-decoration: underline;
+}
