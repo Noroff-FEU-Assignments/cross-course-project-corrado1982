@@ -9,10 +9,7 @@ header {
     width: 384px;
 }
 
-ul{
 
-
-}
 nav li {
     display: inline-block;
     align-items: center;
@@ -21,4 +18,18 @@ nav li {
 
 .current {
     text-decoration: underline;
+}
+
+.bann{
+    display: flex;
+    justify-content: space-between;
+
+}
+.bann figure{
+    margin: 0px;
+}
+
+
+body {
+background-color: #161616;
 }
