@@ -30,16 +30,32 @@ nav li {
     justify-content: space-between;*/
 
 }
-.bann figure{
-   /* margin: 0px;*/
+.bann-left {
+    position: fixed;
+    left: 0px;
+    top: 242px;px
 }
+.bann-right{
+    position: fixed;
+    right: 0px;
+    top: 242px;px
+  }
 
 
 
                   /*BODY*/
+section {
+    /*display: flex;
+    justify-content: space-between;*/
+}
 body {
     background-color: #161616;
     margin: 0px;
+}
+
+h1 {
+    margin-left: 94px;
+    margin-top: 37px;
 }
 
 h1, p {
