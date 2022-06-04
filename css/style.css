@@ -1,8 +1,12 @@
+
+                    /*HEADER*/
+
 header {
+    top:0px;
+    position: sticky;
     display: flex;
     background-color: #FF4809;
     align-items: flex-end;
-    
 }
 
 .logo {
@@ -19,17 +23,32 @@ nav li {
 .current {
     text-decoration: underline;
 }
-
+/*BANN*/
 .bann{
+    /*
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;*/
 
 }
 .bann figure{
-    margin: 0px;
+   /* margin: 0px;*/
 }
 
 
 body {
 background-color: #161616;
+margin: 0px;
+}
+                  /*BODY*/
+
+h1, p {
+     color: #FF4809;
+ }                 
+
+                /*FOOTER*/
+footer{  
+    margin: auto;              
+    background-color: #FF4809;
+    height: 229px; 
+    width: 1334px;              
 }
