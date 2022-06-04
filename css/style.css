@@ -35,11 +35,12 @@ nav li {
 }
 
 
-body {
-background-color: #161616;
-margin: 0px;
-}
+
                   /*BODY*/
+body {
+    background-color: #161616;
+    margin: 0px;
+}
 
 h1, p {
      color: #FF4809;
