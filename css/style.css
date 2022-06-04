@@ -25,21 +25,21 @@ nav li {
 }
 /*BANN*/
 .bann{
-    /*
-    display: flex;
-    justify-content: space-between;*/
-
-}
-.bann-left {
     position: fixed;
-    left: 0px;
     top: 242px;px
+    }
+
+.bann-left {
+    
+    left: 0px;
+    
 }
 .bann-right{
-    position: fixed;
+    
     right: 0px;
-    top: 242px;px
-  }
+    
+}
+
 
 
 
@@ -54,18 +54,26 @@ body {
 }
 
 h1 {
-    margin-left: 94px;
+    margin-left: 356px;
     margin-top: 37px;
 }
 
 h1, p {
      color: #FF4809;
- }                 
+ }     
+ .coming-soon-row, .most-sold-row, .hot-deals-row {
+     display: flex;
+     justify-content: space-between;
+     padding-left: 287px;
+     padding-right: 287px;
+     margin-left: 66px;
+     margin-right: 66px;
+ }            
 
                 /*FOOTER*/
 footer{  
     margin: auto;              
     background-color: #FF4809;
     height: 229px; 
-    width: 1334px;              
+    width: 940px;              
 }
