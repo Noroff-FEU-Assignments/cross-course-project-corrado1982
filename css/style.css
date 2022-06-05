@@ -227,96 +227,105 @@ width: 43px;
 @media only screen and (max-width: 1400px){
     
     .logo {
-        width: 240px;
-    }
-    
+    width: 240px;
+}
+
     .bann{
-        display: none;
-    }
-    .coming-soon-row,
-    .most-sold-row,
-    .hot-deals-row,
-    .new-arrived-row {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .big-screen{
-        display: none;
-        font-display: none;
-    }
-    footer {
-        margin: 120px 0 0 0;
-        height: 150px;
+    display: none;
+}
     
+.coming-soon-row,
+.most-sold-row,
+.hot-deals-row,
+.new-arrived-row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.big-screen{
+    display: none;
+    font-display: none;
+}
+
+footer {
+    margin: 120px 0 0 0;
+    height: 150px;
+
+}
+
+nav {
+    position:fixed;
+    top: 171px;
+    left: 0px;
+    display: none;
+    text-align: center;
+}
+
+.list-hamburger {
+    margin-top: 0px;
+    height: 230px;
+    width: 204px;
+    display: block;
+    background-color: white;
+    padding-left: 0px;
+    min-width: 204px;
+
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+
+}
+
+.fa-solid {
+    font-size: 100px;
+    margin-bottom: 30px;
+
+}
+
+.small-screen {
+    justify-content: space-around;
+}
+
+footer h3 {
+    text-decoration: underline;
+    margin: 10px auto;
+    font-size: 30px;
     }
-    nav {
-        position:fixed;
-        top: 171px;
-        left: 0px;
-        display: none;
-        text-align: center;
+
+footer p {
+    margin-top: 15px;
+    font-size: 16px;
     }
-    .list-hamburger {
-        margin-top: 0px;
-        height: 230px;
-        width: 204px;
-        display: block;
-        background-color: white;
-        padding-left: 0px;
-        min-width: 204px;
+
+.icons {
+    width: 150px;
+
+}
+
+.small-cart {
+    margin-bottom: 40px;
+    }
+
+.facebook{
+    width: 26px;
+}
         
-    }
-    #hamburger-menu {
-        display: none;
-    }
-    
-    #hamburger-menu:checked ~ nav {
-        display: block;
-    
-    }
-    .fa-solid {
-        font-size: 100px;
-        margin-bottom: 30px;
+.youtube {
+    width: 32px;
+}
 
-    }
-    .small-screen {
-        justify-content: space-around;
-    }
+.twitter {
+    width: 34px;
 
-    footer h3 {
-        text-decoration: underline;
-        margin: 10px auto;
-        font-size: 30px;
-    }
-    
-    footer p {
-        margin-top: 15px;
-        font-size: 16px;
-    }
-    
-    .icons {
-        width: 150px;
+}
+        
+.twitch {
+    width: 28px;
+}
 
-    }
-
-    .small-cart {
-        margin-bottom: 40px;
-    }
-  
-        .facebook{
-            width: 26px;
-            }
-            
-            .youtube {
-                width: 32px;
-            }
-            
-            .twitter {
-                width: 34px;
-            
-            }
-            
-            .twitch {
-                width: 28px;
-            }
 }
