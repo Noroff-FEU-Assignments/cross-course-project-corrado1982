@@ -5,15 +5,22 @@ header {
     top:0px;
     position: sticky;
     display: flex;
+    justify-content: space-between;
     background-color: #FF4809;
     align-items: flex-end;
 }
 
 .logo {
-    width: 384px;
+    width: 350px;
 }
 
+nav ul {
+display: flex;
+    width: 355px;
+    padding-left: 0px;
+    justify-content: space-around;
 
+}
 nav li {
     display: inline-block;
     align-items: center;
@@ -24,10 +31,12 @@ nav li {
     text-decoration: underline;
 }
 /*BANN*/
+
 .bann{
     position: fixed;
-    top: 242px;px
-    }
+    top: 225px;
+    width: 275px;
+}
 
 .bann-left {
     
@@ -54,14 +63,27 @@ body {
 }
 
 h1 {
+    display: none;
+}
+
+h2 {
     margin-left: 356px;
     margin-top: 37px;
 }
 
-h1, p {
+h2 {
      color: #FF4809;
- }     
- .coming-soon-row, .most-sold-row, .hot-deals-row {
+ } 
+p {
+    color: black;
+}
+ 
+
+.coming-soon-row,
+.most-sold-row,
+.hot-deals-row,
+.new-arrived-row {
+    height: 286px;
      display: flex;
      justify-content: space-between;
      padding-left: 287px;
@@ -72,8 +94,43 @@ h1, p {
 
                 /*FOOTER*/
 footer{  
-    margin: auto;              
+    margin-left: 275px;
+    margin-right: 275px;
+    margin-top: 120px;              
     background-color: #FF4809;
-    height: 229px; 
-    width: 940px;              
+    height: 225px; 
+    display: flex;  
+    justify-content: space-around;         
+}
+.footer-address {
+    text-align: center;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+}
+
+.facebook{
+width: 43px;
+}
+
+.youtube {
+    width: 50px;
+}
+
+.twitter {
+    width: 53px;
+
+}
+
+.twitch {
+    width: 41px;
+
 }
