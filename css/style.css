@@ -19,7 +19,9 @@ footer {
                    
                    
                    /*HEADER*/
-
+.lens {
+    border-radius: 50%;
+}
 header {
     
     top:0px;
