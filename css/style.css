@@ -190,7 +190,7 @@ width: 43px;
 }
 
 
-@media only screen and (max-width: 800px){
+@media (max-width: 800px){
     .coming-s1,
     .most-s2,
     .hot-d3,
@@ -201,7 +201,7 @@ width: 43px;
 
 }
 
-@media only screen and (max-width: 630px){
+@media (max-width: 630px){
     .coming-s1,
     .most-s2,
     .hot-d3,
@@ -217,14 +217,14 @@ width: 43px;
 }
 
 
-@media only screen and (min-width: 1401px){
+@media (min-width: 1401px){
 .small-screen 
 {display: none;}
 
 }
 
 
-@media only screen and (max-width: 1400px){
+@media (max-width: 1400px){
     
     .logo {
     width: 240px;
