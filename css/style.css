@@ -19,6 +19,8 @@ footer {
                    
                    
                    /*HEADER*/
+
+
 .lens {
     border-radius: 50%;
 }
@@ -47,7 +49,7 @@ nav ul {
     
     font-size: 40px;
     display: flex;
-    width: 1000px;
+    min-width: 800px;
     margin-bottom: 10px;
     padding-left: 0px;
     justify-content: space-between;
@@ -58,7 +60,10 @@ nav li {
     align-items: center;
 
 }
-
+nav a {
+color: black;
+    text-decoration: none;
+}
 .current {
     text-decoration: underline;
 }
@@ -99,10 +104,14 @@ h1 {
 }
 
 h2 {
-    margin-left: 356px;
+    width: 220px;
+    margin-right: auto;
+    padding-left: 0px;
+    margin-left: auto;
     margin-top: 37px;
     color: #FF4809;
     font-size: 40px;
+   /* margin-left: 356px;*/
 }
 
 p {
@@ -135,6 +144,7 @@ footer{
 }
 
 footer h3 {
+    text-decoration: underline;
     margin: 10px auto;
     font-size: 40px;
 }
@@ -177,3 +187,24 @@ width: 43px;
     width: 41px;
 
 }
+
+@media only screen and (max-width: 1400px){
+    .bann{
+        display: none;
+    }
+    .coming-soon-row,
+    .most-sold-row,
+    .hot-deals-row,
+    .new-arrived-row {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    footer {
+        margin: 120px 0 0 0;
+    
+    }
+    nav {
+        display: none;
+    }
+}
+
