@@ -1,7 +1,27 @@
 
-                    /*HEADER*/
+@font-face {
+    font-family: "Carlito Bold";
+    src: url(../fonts/carlito.bold.ttf) format("truetype");
+    
+}
+@font-face {
+    font-family: "Carlito Regular";
+    src: url(../fonts/carlito.regular.ttf) format("truetype");
+}
+                   
+header, body {
+    font-family: "Carlito Bold", Verdana, Geneva, Tahoma, sans-serif;
+}                   
+footer {
+    font-family: "Carlito Regular", Verdana, Geneva, Tahoma, sans-serif;
+}                
+                   
+                   
+                   
+                   /*HEADER*/
 
 header {
+    
     top:0px;
     position: sticky;
     display: flex;
@@ -10,15 +30,25 @@ header {
     align-items: flex-end;
 }
 
+.cart-icon {
+    width: 100px;
+    margin-right: 180px;
+    margin-bottom: 15px;
+}
+
 .logo {
     width: 350px;
 }
 
+
 nav ul {
-display: flex;
-    width: 355px;
+    
+    font-size: 40px;
+    display: flex;
+    width: 1000px;
+    margin-bottom: 10px;
     padding-left: 0px;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 nav li {
@@ -69,11 +99,10 @@ h1 {
 h2 {
     margin-left: 356px;
     margin-top: 37px;
+    color: #FF4809;
+    font-size: 40px;
 }
 
-h2 {
-     color: #FF4809;
- } 
 p {
     color: black;
 }
@@ -102,7 +131,19 @@ footer{
     display: flex;  
     justify-content: space-around;         
 }
+
+footer h3 {
+    margin: 10px auto;
+    font-size: 40px;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
 .footer-address {
+    
     text-align: center;
 }
 
