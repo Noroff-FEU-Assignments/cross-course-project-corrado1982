@@ -2,18 +2,19 @@
 <html>
   <head>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5cbf6b407.js" crossorigin="anonymous"></script>
     <title>Game Hub | Home</title>
   </head>
 
     <body>
-    <!--  <header class="big-screen">
+     <header class="big-screen">
           <h1>Game Hub</h1>
           <a href="index.html"><img src="images/big/GameHub_Logo.png" alt="logo" class="logo"></a>
-        
+        <!---
           <div class="search-form">
             <input type="search" id="site-search" name="q"><label for="site-search">Search</label>
             <button class="lens"><img src="images/icon/Icon-search.png"></button>
-          </div>
+          </div><--->
           
 
       <nav>
@@ -26,26 +27,30 @@
       </nav>
       <img src="images/icon/cart-icon.png" alt="cart" href="cart.html" class="cart-icon">
     </header> 
-    <--->
+    
     <header class="small-screen">
       <h1>Game Hub</h1>
       
-      <input type="checkbox" name="updates" value="sign-for-updates" id="updates">
-      <label for="updates" class="lab-checkbox"></label>
-
-      <a href="index.html"><img src="images/big/GameHub_Logo.png" alt="logo" class="logo"></a>
-      
-
+      <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu">
+    
       <nav>
-        <ul>
+        <ul class="list-hamburger">
           <li><a href="index.html" class="current">Home</a></li>
           <li><a href="index.html">Games</a></li>
           <li><a href="index.html">About Us</a></li>
           <li><a href="index.html">Contact Us</a></li>
         </ul>
-      </nav>
+      </nav> 
+      
+
+      <a href="index.html"><img src="images/big/GameHub_Logo.png" alt="logo" class="logo"></a>
+      
+
+      
       <img src="images/icon/Icon-cart-only.png" alt="cart-only" href="cart.html" class="small-cart">
     </header> 
+   
 
 
 
