@@ -34,14 +34,19 @@ header {
 }
 .cart {
     width: 20%;
+    margin-block: auto;
 }
 .cart-icon {
     display: block;
-    margin: 25px auto;
+    margin: auto;
     /* width: 100px;
     margin-right: 180px;
     margin-bottom: 15px; */
 }
+.logo-small img {
+    width: 100%;
+}
+
 .logo-small {
     width: 30%;
 }
