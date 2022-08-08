@@ -32,13 +32,14 @@ header {
     background-color: #FF4809;
     align-items: flex-end;
 }
-.cart {
+/*.cart {
     width: 20%;
-    margin-block: auto;
-}
+    margin-block: auto;}*/
+
 .cart-icon {
-    display: block;
-    margin: auto;
+    /*display: block;*/
+    width: 10%;
+    margin: auto 5%;
     /* width: 100px;
     margin-right: 180px;
     margin-bottom: 15px; */
@@ -317,7 +318,7 @@ label, #hamburger-menu, .fa-solid,
 .bann{
     display: none;
 }
-.cart {
+.cart-icon {
     display: none;
 }
 
@@ -400,10 +401,13 @@ footer p {
 }
 
 .small-cart {
-    margin-block: auto;
+    margin-block: auto auto;
     width: 15%;
     }
-
+.small-cart img {
+    
+    width: 100%;
+}
 .facebook{
     width: 26px;
 }
