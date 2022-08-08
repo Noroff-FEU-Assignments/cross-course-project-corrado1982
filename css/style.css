@@ -42,7 +42,12 @@ header {
     margin-right: 180px;
     margin-bottom: 15px; */
 }
-
+.logo-small {
+    width: 30%;
+}
+.logo img {
+    width:100%;
+}
 .logo {
     /* width: 325px; */
     width: 20%;
@@ -129,7 +134,7 @@ h2 {
 }
 
 .product {
-   /* display: block;*/
+   display: block;
     background-color: #FFC27C;
     border-color: #FF4809;
     border-radius: 15px;
@@ -176,11 +181,11 @@ footer p {
 .new-arrived-row {
     height: 286px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 287px;
     padding-right: 287px;
-    margin-left: 66px;
-    margin-right: 66px;
+   /* margin-left: 66px;
+    margin-right: 66px;*/
 }
 
                 /*FOOTER*/
@@ -238,7 +243,23 @@ width: 43px;
     width: 41px;
 
 }
+@media (max-width: 420px){
+    .coming-s1,
+    .coming-s2,
+    .most-s2,
+    .most-s1,
+    .hot-d3,
+    .hot-d4,
+    .new-a4,
+    .new-a3,
+    .coming-s4,
+    .most-s3,
+    .hot-d2,
+    .new-a1 {
+        display: none;
 
+}
+}
 
 @media (max-width: 800px){
     .coming-s1,
@@ -282,9 +303,9 @@ label, #hamburger-menu, .fa-solid,
 
 @media (max-width: 1400px){
 
-.logo-small {
+/*.logo-small {
     width: 240px;
-}
+}*/
 .logo {
     display: none
 }
@@ -333,7 +354,10 @@ nav {
     min-width: 204px;
 
 }
+label {
+    margin-block: auto;
 
+}
 #hamburger-menu {
     display: none;
 }
@@ -344,8 +368,9 @@ nav {
 }
 
 .fa-solid {
+    
     font-size: 100px;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 
 }
 
@@ -370,7 +395,8 @@ footer p {
 }
 
 .small-cart {
-    margin-bottom: 40px;
+    margin-block: auto;
+    width: 15%;
     }
 
 .facebook{
