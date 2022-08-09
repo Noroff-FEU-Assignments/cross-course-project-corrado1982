@@ -7,6 +7,9 @@
     font-family: "Carlito Regular";
     src: url(../fonts/carlito.regular.ttf) format("truetype");
 }
+.body-product-page {
+    background-color: white;
+}
 
 header, body {
     font-family: "Carlito Bold", Verdana, Geneva, Tahoma, sans-serif;
@@ -78,8 +81,9 @@ nav li {
     align-items: center;
 
 }
+a,
 nav a {
-color: black;
+    color: black;
     text-decoration: none;
 }
 .current {
@@ -300,7 +304,7 @@ width: 43px;
     display: none;}
 .logo-small {display: none}
 
-label, #hamburger-menu, .fa-solid, 
+/*label,*/#hamburger-menu, .fa-solid, 
 .fa-bars:before {display: none}
 }
 
@@ -353,7 +357,7 @@ nav {
     min-width: 204px;
 
 }
-label {
+.label-h-m  {
     margin-block: auto;
 
 }
