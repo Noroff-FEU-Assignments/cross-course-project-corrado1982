@@ -27,9 +27,9 @@ header {
     top:0px;
     position: sticky;
     display: flex;
-    justify-content: space-between;
     background-color: #FF4809;
     align-items: flex-end;
+    justify-content: space-around;
 }
 /*.cart {
     width: 20%;
@@ -329,12 +329,6 @@ label, #hamburger-menu, .fa-solid,
     padding-right: 0px;
 }
 
-.big-screen{
-    /* display: none; */
-    font-display: none;
-    justify-content: space-around;
-}
-
 footer {
     margin: 120px 0 0 0;
     height: 150px;
@@ -369,6 +363,7 @@ label {
 
 #hamburger-menu:checked ~ nav {
     display: block;
+    
 
 }
 
