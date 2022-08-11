@@ -1,0 +1,49 @@
+.circles {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.cart-top-section {
+    display: flex;
+    justify-content: center;
+}
+.a-cart-circle {
+    text-align: center;
+    margin-top: 60px;
+}
+.left-cart {
+    width: 30%;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.left-cart h3 {
+    margin-bottom: 0;
+}
+.right-cart {
+    margin-top: 55px;
+    width: 30%;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.right-cart .p-plus {
+    margin-bottom: 0;
+}
+.img-assassin {
+    width: 100%;
+ 
+    
+}
+.cart-main {
+    display: flex;
+    justify-content: space-around;
+}
+.p-plus {
+    font-size: 1.5em;
+    /*remember to adjust all p-plus*/
+}
