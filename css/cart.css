@@ -41,9 +41,7 @@
 .delete {
     display: flex;
 }
-.delete .p-plus {
-    /*margin-top: 25px;*/
-}
+
 
 .right-cart .p-plus {
     margin-bottom: 0;
@@ -61,3 +59,21 @@
     font-size: 1.5em;
     /*remember to adjust all p-plus*/
 }
+.cart-tot {
+    margin: 0 10%;
+}
+.tot {
+    height: 40px;
+}
+.sub-tot_price,
+.delivery_price,
+.total_price {
+   display: flex;
+   justify-content: space-between; 
+}
+.cart-page_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 10%;
+    flex-wrap: wrap;
+} 
