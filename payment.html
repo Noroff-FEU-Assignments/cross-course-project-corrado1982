@@ -9,6 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/product.css" rel="stylesheet">
     <link href="css/cart.css" rel="stylesheet">
+    <link href="css/payment.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5cbf6b407.js" crossorigin="anonymous"></script>
     <title>Game Hub | Payment</title>
   </head>
@@ -55,24 +56,55 @@
             </div>
 
         </section>
-<main>
+<main class="payment">
     <form class="left-form">
+      <div class="lft name">
         <label for="full-name">Full Name</label>
         <input name="full-name" type="text" id="full-name">
-      <div class="address-form">
-        <label for="address">Address</label>
-        <input name="address" type="text" id="address">
-        <label for="address-number">Number</label>
-        <input name="address-nember" type="tel" id="address-number">   
       </div>
-      <div class="address-form_city">
+      <div class="lft address-form">
+       <div class="add-frm">
+            <label for="address">Address</label>
+            <input name="address" type="text" id="address">
+       </div>
+       <div class="add-frm">
+            <label for="address-number">Number</label>
+            <input name="address-nember" type="tel" id="address-number"> 
+       </div>  
+      </div>
+      <div class="lft address-form_city">
         <label for="city">City</label>
         <input name="city" type="text" id="city">
         <label for="zip-code">ZIP Code</label>
         <input name="zip-code" type="tel" id="zip-code">   
       </div>
+      <div class="lft address-form_country">
         <label for="country">Country</label>
         <input name="country" type="text" id="country">
+      </div>
+    </form>
+    <form class="right-form">
+        <div class="radio-card">
+            <input type="radio" id="paypal" name="payment-method" value="paypal">
+            <label for="paypal"><img src="images/icon/Icon-paypal.png"></label>
+
+            <input type="radio" id="visa" name="payment-method" value="visa">
+            <label for="visa"><img src="images/icon/Icon-visa.png"></label>
+        </div>
+        <div>
+            <label for="cardholder">Cardholder's Name</label>
+            <input name="cardholder" type="text" id="cardholder">
+        </div>
+        <div>
+            <label for="card-number">Card Number</label>
+            <input name="card-number" type="password" id="card-number">
+        </div>
+        <div>
+            <label for="expire">Expiry Date</label>
+            <input name="expire" type="month" id="expire">
+            <label for="cvc">CVC</label>
+            <input name="cvc" type="text" id="cvc">
+        </div>
     </form>
 
 </main>

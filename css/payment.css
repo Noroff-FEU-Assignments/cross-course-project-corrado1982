@@ -1,0 +1,20 @@
+.payment {
+
+    display: flex;
+
+}
+
+.lft {
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.address-form {
+    /*display: flex;
+    align-content: center;*/
+    flex-direction: row;
+}
+.add-frm {
+    display: flex;
+    flex-direction: column;
+}
