@@ -71,6 +71,7 @@
    display: flex;
    justify-content: space-between; 
 }
+.product-page_bottom,
 .cart-page_bottom {
     display: flex;
     justify-content: space-between;

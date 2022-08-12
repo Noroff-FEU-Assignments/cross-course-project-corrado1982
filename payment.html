@@ -5,12 +5,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="Product-page Game Hub">
+    <meta name="description" content="Cart Game Hub">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/product.css" rel="stylesheet">
     <link href="css/cart.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5cbf6b407.js" crossorigin="anonymous"></script>
-    <title>Game Hub | Product Page</title>
+    <title>Game Hub | Payment</title>
   </head>
     <body class="body-product-page">
         <header>
@@ -41,51 +41,49 @@
                 <img src="images/icon/Icon-cart-only.png" alt="cart-only"  > 
             </a>
         </header>
+        <section class="cart-top-section">
+            <div class="circles cart-circle">
+                <p class="a-cart-circle">Cart</a>
 
-        <section class="product-page_details">
-            <div class="product-page_left">
-                <img src="images/games img/cover-assassins.jpg" alt="image-game-assassins" class="product-page_image">
-                <h3>ASSASSIN</h3>
-                <p class="game-description">Enjoy the competition alone or <br>online with your friends, choose <br>and customise your cars.</p>
             </div>
-            <div class="product-page_right">
-                <div class="selector">
-                    <label for="platformlist">Choose a Platform</label>
-                    <select name="platforms" id="platformlist">
-                    <option value="xbox-one">Xbox-ONE</option>
-                    <option value="xbox-XS">Xbox-XS</option>
-                    <option value="playstation-4">Playstation-4</option>
-                    <option value="playstation-5">Playstation-5</option>
-                    <option value="pc">PC</option>
-                    <option value="nintendo">Nintendo</option>
-                    </select>
-                </div>
-                <div class="price_digital">
-                    <input type="radio" class="input-radio" id="digital" name="typegame" value="digital" checked>
-                    <label for="digital">Digital</label>
-                    <p>$9</p>
-                </div>
-                <div class="price_new">
-                    <input type="radio" class="input-radio" id="new" name="typegame" value="digital" checked>
-                    <label for="new">New</label>
-                    <p>$20</p>
-                </div>
-                <div class="price_used">
-                    <input type="radio" class="input-radio" id="used" name="typegame" value="digital" checked>
-                    <label for="used">Used</label>
-                    <p>$12</p>
-                </div>
-            </div>
-        </section> 
-        <section>       
-                
             
-            <div class="product-page_bottom">
-                <a class="cta back-button" href="">Back</a>
-                <a class="cta buy-button" href="">Buy Now</a>
-              </div>
-        </section>
+            <div class="circles payment-circle">
+                <p class="a-cart-circle">Payment</a>
+            </div>
+            <div class="circles checkout-circle">
+                <p class="a-cart-circle">Checkout</a>
+            </div>
 
+        </section>
+<main>
+    <form class="left-form">
+        <label for="full-name">Full Name</label>
+        <input name="full-name" type="text" id="full-name">
+      <div class="address-form">
+        <label for="address">Address</label>
+        <input name="address" type="text" id="address">
+        <label for="address-number">Number</label>
+        <input name="address-nember" type="tel" id="address-number">   
+      </div>
+      <div class="address-form_city">
+        <label for="city">City</label>
+        <input name="city" type="text" id="city">
+        <label for="zip-code">ZIP Code</label>
+        <input name="zip-code" type="tel" id="zip-code">   
+      </div>
+        <label for="country">Country</label>
+        <input name="country" type="text" id="country">
+    </form>
+
+</main>
+
+        <section class="cart-bottom">       
+            <div class="cart-page_bottom">
+              <a class="cta back-button" href="">Back</a>
+              <a class="cta buy-button" href="">Buy Now</a>
+            </div>
+      </section>
+      
     </body>
     <footer>
         <div>
