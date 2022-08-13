@@ -6,7 +6,7 @@
 }
 .right-form,
 .left-form {
-    width: 48%;
+    /* width: 48%; */
     
 }
 .radio-card {
@@ -71,7 +71,18 @@
 .add-frm_nmbr {
     width: 18%;
 }
-
+.cart-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.big-cart {
+    width: 40%;
+    /* margin-right: 52px; */
+}
+.big-p {
+    font-size: 3em;
+}
 @media (max-width: 867px) {
 .payment {
     display: flex;

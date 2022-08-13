@@ -54,6 +54,15 @@ justify-content: space-around;
     border: 12px solid black;
 
 }
+.cta-back-to-shop {
+    font-size: 2em;
+    color: black;
+    margin-top: 70px;
+    background-color: #0DCC34;
+    padding: 22px 91px;
+    border-radius: 13px;
+}
+
 .cta {
     font-size: 2em;
     color: white;
