@@ -1,7 +1,8 @@
 .payment {
-    margin: 40px 15%;
+    margin: 40px 10%;
     display: flex;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .rgt,
 .lft {
@@ -15,12 +16,17 @@
     align-content: center;*/
     flex-direction: row;
 }
+.address-form_city,
+.address-form {
+    display: flex;
+    justify-content: space-between;
+}
 .add-frm {
     display: flex;
     flex-direction: column;
 }
-.city-form,
-.exp-cvc {
+
+.city-form {
     display: flex;
     flex-direction: column;
 }
@@ -29,6 +35,8 @@
     display: flex;
     justify-content: space-between;
 }
+.add-frm_add,
+.add-frm_nmbr,
 .exp-cvc_exp,
 .exp-cvc_cvc {
     display: flex;
@@ -40,4 +48,12 @@
 }
 .exp-cvc_cvc {
     width: 25%;
+}
+.city-form_city,
+.add-frm_add {
+    width: 80%;
+}
+.city-form_zip,
+.add-frm_nmbr {
+    width: 18%;
 }
