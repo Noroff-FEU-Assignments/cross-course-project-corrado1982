@@ -4,8 +4,22 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.right-form,
+.left-form {
+    width: 48%;
+    
+}
+.radio-card {
+    margin-top: 10px;
+
+}
+
+.img-pay {
+    height: 38px;
+}
 .rgt,
 .lft {
+    margin-top: 10px;
     display:flex;
     flex-direction: column;
     align-content: flex-start;
@@ -56,4 +70,17 @@
 .city-form_zip,
 .add-frm_nmbr {
     width: 18%;
+}
+
+@media (max-width: 867px) {
+.payment {
+    display: flex;
+    justify-content: center;
+}
+.right-form,
+.left-form {
+    width: 340px;
+    
+}
+
 }
