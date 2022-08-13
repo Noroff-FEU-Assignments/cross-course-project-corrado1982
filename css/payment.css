@@ -1,5 +1,5 @@
 .payment {
-
+    margin: 40px 15%;
     display: flex;
 
 }
@@ -9,7 +9,7 @@
     flex-direction: column;
     align-content: flex-start;
 }
-.expiry-form,
+.address-form_city,
 .address-form {
     /*display: flex;
     align-content: center;*/
@@ -19,7 +19,25 @@
     display: flex;
     flex-direction: column;
 }
+.city-form,
 .exp-cvc {
     display: flex;
     flex-direction: column;
+}
+.expary-form {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.exp-cvc_exp,
+.exp-cvc_cvc {
+    display: flex;
+    flex-direction: column;
+    
+}
+.exp-cvc_exp {
+    width: 40%;
+}
+.exp-cvc_cvc {
+    width: 25%;
 }

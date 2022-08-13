@@ -73,10 +73,14 @@
        </div>  
       </div>
       <div class="lft address-form_city">
-        <label for="city">City</label>
-        <input name="city" type="text" id="city">
-        <label for="zip-code">ZIP Code</label>
-        <input name="zip-code" type="tel" id="zip-code">   
+        <div class="city-form">
+            <label for="city">City</label>
+            <input name="city" type="text" id="city">
+        </div>
+        <div class="city-form">
+            <label for="zip-code">ZIP Code</label>
+            <input name="zip-code" type="tel" id="zip-code"> 
+        </div>  
       </div>
       <div class="lft address-form_country">
         <label for="country">Country</label>
@@ -100,11 +104,11 @@
             <input name="card-number" type="password" id="card-number">
         </div>
         <div class="rgt expary-form">
-            <div class="exp-cvc">
+            <div class="exp-cvc_exp">
                 <label for="expire">Expiry Date</label>
                 <input name="expire" type="month" id="expire">
             </div>
-            <div class="exp-cvc">
+            <div class="exp-cvc_cvc">
                 <label for="cvc">CVC</label>
                 <input name="cvc" type="text" id="cvc">
             </div>
