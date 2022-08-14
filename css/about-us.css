@@ -1,0 +1,16 @@
+.about-textbox {
+    background-color: white;
+    margin: 40px 10%;
+}   
+
+.about-text {
+    margin: 40px 15px;
+}
+.about-text h3 {
+    margin-top: 50px;
+    display: inline-block;
+}
+.about-text p {
+    display: inline-block;
+    margin-bottom: 40px;
+}
