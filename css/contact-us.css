@@ -1,0 +1,11 @@
+.contact-textbox {
+    background-color: white;
+    margin: 40px 30%;
+
+    display: flex;
+    flex-direction: column;
+}
+.cta-submit {
+
+    
+}
