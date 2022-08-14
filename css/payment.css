@@ -83,6 +83,19 @@
 .big-p {
     font-size: 3em;
 }
+.circle-cheched {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 40px;
+    background-color: #0DCC34;
+    
+}
+.checked-img {
+    margin: 50px 0 0 7px;
+}
+
 @media (max-width: 867px) {
 .payment {
     display: flex;
