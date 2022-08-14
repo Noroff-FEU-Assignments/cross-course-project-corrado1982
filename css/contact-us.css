@@ -5,7 +5,22 @@
     display: flex;
     flex-direction: column;
 }
+.txt,
+.mail {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
 .cta-submit {
+    width: 100px;
+    display: flex;
+    text-align: center;
+    margin: 3px auto;
+    font-size: 2em;
+    color: black;
+    margin-top: 70px;
+    background-color: #0DCC34;
+    padding: 22px 91px;
+    border-radius: 13px;
 
-    
 }
