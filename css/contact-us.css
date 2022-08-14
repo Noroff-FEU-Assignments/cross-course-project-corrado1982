@@ -11,8 +11,8 @@
     flex-direction: column;
     margin: 40px;
 }
-.cta-submit {
-    width: 100px;
+/* .cta-submit { 
+    width: 80px;
     display: flex;
     text-align: center;
     margin: 3px auto;
@@ -21,6 +21,19 @@
     margin-top: 70px;
     background-color: #0DCC34;
     padding: 22px 91px;
-    border-radius: 50px;
+    border-radius: 50px; 
 
+}*/
+.cta-submit {
+    width: 181px;
+    display: flex;
+    text-align: center;
+    margin: 3px auto;
+    font-size: 2em;
+    color: black;
+    margin-top: 70px;
+    background-color: #0DCC34;
+    padding: 15px 5px;
+    border-radius: 50px;
+    justify-content: center;
 }
