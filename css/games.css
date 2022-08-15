@@ -1,0 +1,12 @@
+.platforms {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.platmorms-page {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
