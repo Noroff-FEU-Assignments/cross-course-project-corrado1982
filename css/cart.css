@@ -13,6 +13,9 @@
     text-align: center;
     margin-top: 60px;
 }
+.current-circle {
+    background-color: #0DCC34;
+}
 .left-cart {
     width: 30%;
     text-align: center;
