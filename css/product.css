@@ -79,3 +79,6 @@ justify-content: space-around;
     padding: 10px 40px;
     border-radius: 30px;
 }
+.back-button:hover {
+    cursor: pointer;
+}
