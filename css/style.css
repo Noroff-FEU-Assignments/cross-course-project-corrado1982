@@ -273,6 +273,10 @@ width: 43px;
 .cta {
     padding: 10px 22px;
 }
+.cta:hover {
+    padding: 10px 22px;
+}
+
 .logo,
 .bann,
 .cart-icon {
