@@ -170,8 +170,6 @@ footer p {
     justify-content: space-around;
     padding-left: 287px;
     padding-right: 287px;
-   /* margin-left: 66px;
-    margin-right: 66px;*/
 }
 
                 /*FOOTER*/
@@ -180,7 +178,6 @@ footer{
     margin-right: 15%;
     margin-top: 120px;
     background-color: #FF4809;
-    /* height: 225px;  */
     display: flex;
     justify-content: space-around;
 }
@@ -197,11 +194,7 @@ footer p {
     color: black;
 }
 
-.footer-address {
-
-    text-align: center;
-}
-
+.footer-address,
 .footer-links {
     text-align: center;
 }
@@ -276,14 +269,18 @@ width: 43px;
 
 
 @media (min-width: 1401px){
-/* .small-screen
-{display: none;} */
 .small-cart {
-    display: none;}
-.logo-small {display: none}
+    display: none;
+}
+.logo-small {
+    display: none
+}
 
-/*label,*/#hamburger-menu, .fa-solid, 
-.fa-bars:before {display: none}
+#hamburger-menu, 
+.fa-solid, 
+.fa-bars:before {
+    display: none
+}
 }
 
 
