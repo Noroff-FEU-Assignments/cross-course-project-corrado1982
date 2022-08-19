@@ -103,10 +103,7 @@ nav a {
 
 
                   /*BODY*/
-/*section {
-     display: flex;
-    justify-content: space-between;
-}*/
+
 body {
     background-color: #161616;
     margin: 0px;
@@ -122,13 +119,6 @@ h2 {
     color: #FF4809;
     font-size: 40px;
 
-    /* margin-right: auto;
-    margin-left: auto;
-    margin-top: 37px; */
-
-    /* width: 220px;
-    padding-left: 0px; */
-   /* margin-left: 356px;*/
 }
 
 .product {
@@ -142,6 +132,11 @@ h2 {
 .product p {
     font-size: 1.5em;
     margin: 0 6px;
+}
+.img-product {
+    height: 200px;
+    margin: 0 5px;
+
 }
 .price-card {
     display: grid;
@@ -157,21 +152,14 @@ h2 {
     margin: 0px;
     
 }
-.img-product {
-    margin: 0 5px;
-}
+
 
 footer p {
-    color: black;
-}
-.coming-soon-row-2 {
-    display: flex;
+    
 }
 
-.img-product {
-    height: 200px;
 
-}
+
 
 .coming-soon-row,
 .most-sold-row,
@@ -206,6 +194,7 @@ footer h3 {
 footer p {
     margin-top: 15px;
     font-size: 24px;
+    color: black;
 }
 
 .footer-address {
