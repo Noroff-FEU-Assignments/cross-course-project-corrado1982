@@ -129,6 +129,9 @@ h2 {
     width: 166px;
     height: 300px;
 }
+.p-plus {
+    font-size: 1.5em;
+}
 .product p {
     font-size: 1.5em;
     margin: 0 6px;
@@ -152,14 +155,6 @@ h2 {
     margin: 0px;
     
 }
-
-
-footer p {
-    
-}
-
-
-
 
 .coming-soon-row,
 .most-sold-row,
@@ -287,15 +282,9 @@ width: 43px;
 
 @media (max-width: 1400px){
 
-/*.logo-small {
-    width: 240px;
-}*/
-.logo {
-    display: none
-}
-.bann{
-    display: none;
-}
+
+.logo,
+.bann,
 .cart-icon {
     display: none;
 }
@@ -349,12 +338,7 @@ nav {
 .fa-solid {
     
     font-size: 100px;
-    /*margin-bottom: 30px;*/
 
-}
-
-.small-screen {
-    justify-content: space-around;
 }
 
 footer h3 {
@@ -376,7 +360,7 @@ footer p {
 .small-cart {
     margin-block: auto auto;
     width: 15%;
-    }
+}
 .small-cart img {
     
     width: 100%;

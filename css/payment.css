@@ -4,11 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.right-form,
-.left-form {
-    /* width: 48%; */
-    
-}
+
 .radio-card {
     margin-top: 10px;
 
@@ -26,8 +22,6 @@
 }
 .address-form_city,
 .address-form {
-    /*display: flex;
-    align-content: center;*/
     flex-direction: row;
 }
 .address-form_city,
@@ -78,7 +72,6 @@
 }
 .big-cart {
     width: 40%;
-    /* margin-right: 52px; */
 }
 .big-p {
     font-size: 3em;
