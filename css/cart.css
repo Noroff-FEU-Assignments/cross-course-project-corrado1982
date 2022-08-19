@@ -37,30 +37,20 @@
 .trash-icon {
     width: 24px;
     height: 27px;
-   /* margin-top: 25px;*/
     margin-left: 13px;
-
 }
 .delete {
     display: flex;
 }
-
-
 .right-cart .p-plus {
     margin-bottom: 0;
 }
 .img-assassin {
     width: 100%;
- 
-    
 }
 .cart-main {
     display: flex;
     justify-content: space-around;
-}
-.p-plus {
-    font-size: 1.5em;
-    /*remember to adjust all p-plus*/
 }
 .cart-tot {
     margin: 0 10%;
