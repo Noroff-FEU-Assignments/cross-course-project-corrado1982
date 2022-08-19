@@ -222,23 +222,7 @@ width: 43px;
     width: 41px;
 
 }
-@media (max-width: 420px){
-    .coming-s1,
-    .coming-s2,
-    .most-s2,
-    .most-s1,
-    .hot-d3,
-    .hot-d4,
-    .new-a4,
-    .new-a3,
-    .coming-s4,
-    .most-s3,
-    .hot-d2,
-    .new-a1 {
-        display: none;
 
-}
-}
 
 @media (max-width: 800px){
     .coming-s1,
@@ -286,7 +270,9 @@ width: 43px;
 
 @media (max-width: 1400px){
 
-
+.cta {
+    padding: 10px 22px;
+}
 .logo,
 .bann,
 .cart-icon {
@@ -341,7 +327,7 @@ nav {
 
 .fa-solid {
     
-    font-size: 100px;
+    font-size: 80px;
 
 }
 
@@ -357,7 +343,7 @@ footer p {
     }
 
 .icons {
-    width: 150px;
+    width: 130px;
 
 }
 
@@ -370,25 +356,44 @@ footer p {
     width: 100%;
 }
 .facebook{
-    width: 26px;
+    width: 22px;
 }
 
 .youtube {
-    width: 32px;
+    width: 28px;
 }
 
 .twitter {
-    width: 34px;
+    width: 30px;
 
 }
 
 .twitch {
-    width: 28px;
+    width: 24px;
 }
 
 }
 
+@media (max-width: 420px){
+    .coming-s1,
+    .coming-s2,
+    .most-s2,
+    .most-s1,
+    .hot-d3,
+    .hot-d4,
+    .new-a4,
+    .new-a3,
+    .coming-s4,
+    .most-s3,
+    .hot-d2,
+    .new-a1 {
+        display: none;
 
+}
+.icons {
+    flex-direction: column;
+}
+}
 
 
 
