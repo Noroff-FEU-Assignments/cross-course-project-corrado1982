@@ -1,110 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="description" content="Product-page Game Hub">
-    <link href="css/cta.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/product.css" rel="stylesheet">
-    <link href="css/cart.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c5cbf6b407.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Product-page Game Hub" />
+    <link href="css/cta.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/product.css" rel="stylesheet" />
+    <link href="css/cart.css" rel="stylesheet" />
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3263954, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script
+      src="https://kit.fontawesome.com/c5cbf6b407.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Game Hub | Product Page</title>
   </head>
-    <body class="body-product-page">
-        <header>
-            <h1>Game Hub</h1>
-            <a href="index.html" class="logo">
-                <img src="images/big/GameHub_Logo.png" alt="logo">
-            </a>
+  <body class="body-product-page">
+    <header>
+      <h1>Game Hub</h1>
+      <a href="index.html" class="logo">
+        <img src="images/big/GameHub_Logo.png" alt="logo" />
+      </a>
 
-            <label for="hamburger-menu" class="label-h-m"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="hamburger-menu">
-            <nav>
-                <ul class="list-hamburger">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html" class="current">Games</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            
-            <a  href="cart.html" class="cart-icon" >
-                <img src="images/icon/cart-icon.png" alt="cart" >
-            </a> 
-            <!--Small Icons-->
-            <a href="index.html" class="logo-small" >
-                <img  src="images/big/GameHub_Logo.png" alt="logo">
-            </a>
-            <a href="cart.html" class="small-cart">
-                <img src="images/icon/Icon-cart-only.png" alt="cart-only"  > 
-            </a>
-        </header>
+      <label for="hamburger-menu" class="label-h-m"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul class="list-hamburger">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html" class="current">Games</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
 
-        <section class="product-page_details">
-            <div class="product-page_left">
-                <img src="images/games img/cover-assassins.jpg" alt="image-game-assassins" class="product-page_image">
-                <h3>ASSASSIN</h3>
-                <p class="game-description">Enjoy the competition alone or <br>online with your friends, choose <br>and customise your cars.</p>
-            </div>
-            <div class="product-page_right">
-                <div class="selector">
-                    <label for="platformlist">Choose a Platform</label>
-                    <select name="platforms" id="platformlist">
-                    <option value="xbox-one">Xbox-ONE</option>
-                    <option value="xbox-XS">Xbox-XS</option>
-                    <option value="playstation-4">Playstation-4</option>
-                    <option value="playstation-5">Playstation-5</option>
-                    <option value="pc">PC</option>
-                    <option value="nintendo">Nintendo</option>
-                    </select>
-                </div>
-                <div class="price_digital">
-                    <input type="radio" class="input-radio" id="digital" name="typegame" value="digital" checked>
-                    <label for="digital">Digital</label>
-                    <p>$9</p>
-                </div>
-                <div class="price_new">
-                    <input type="radio" class="input-radio" id="new" name="typegame" value="digital" checked>
-                    <label for="new">New</label>
-                    <p>$20</p>
-                </div>
-                <div class="price_used">
-                    <input type="radio" class="input-radio" id="used" name="typegame" value="digital" checked>
-                    <label for="used">Used</label>
-                    <p>$12</p>
-                </div>
-            </div>
-        </section> 
-        <section>       
-                
-            
-            <div class="product-page_bottom">
-                <a class="cta back-button" onclick="history.back()">Back</a>
-                <a class="cta buy-button" href="cart.html">Buy Now</a>
-              </div>
-        </section>
+      <a href="cart.html" class="cart-icon">
+        <img src="images/icon/cart-icon.png" alt="cart" />
+      </a>
+      <!--Small Icons-->
+      <a href="index.html" class="logo-small">
+        <img src="images/big/GameHub_Logo.png" alt="logo" />
+      </a>
+      <a href="cart.html" class="small-cart">
+        <img src="images/icon/Icon-cart-only.png" alt="cart-only" />
+      </a>
+    </header>
 
-    </body>
-    <footer>
-        <div>
-        <a href="contact-us.html"><h3 class="footer-links">Contact Us</h3></a>
-        <p>gamehub@hotmail.com</p>
+    <section class="product-page_details">
+      <div class="product-page_left">
+        <img
+          src="images/games img/cover-assassins.jpg"
+          alt="image-game-assassins"
+          class="product-page_image"
+        />
+        <h3>ASSASSIN</h3>
+        <p class="game-description">
+          Enjoy the competition alone or <br />online with your friends, choose
+          <br />and customise your cars.
+        </p>
+      </div>
+      <div class="product-page_right">
+        <div class="selector">
+          <label for="platformlist">Choose a Platform</label>
+          <select name="platforms" id="platformlist">
+            <option value="xbox-one">Xbox-ONE</option>
+            <option value="xbox-XS">Xbox-XS</option>
+            <option value="playstation-4">Playstation-4</option>
+            <option value="playstation-5">Playstation-5</option>
+            <option value="pc">PC</option>
+            <option value="nintendo">Nintendo</option>
+          </select>
         </div>
-        <div>
-        <a href="about-us.html"><h3 class="footer-links">About Us</h3></a>
-        <p class="footer-address">Camden town 16<br> 0049 London<br>England</p>
+        <div class="price_digital">
+          <input
+            type="radio"
+            class="input-radio"
+            id="digital"
+            name="typegame"
+            value="digital"
+            checked
+          />
+          <label for="digital">Digital</label>
+          <p>$9</p>
         </div>
-        <div>
-        <h3 class="footer-links">Social</h3>
-        <div class="icons">
-            <a href=""><img src="images/icon/Icon-facebook.png" alt="icon-facebook" class="social-icon facebook"></a>
-            <a href=""><img src="images/icon/Icon-youtube.png" alt="icon-youtube" class="social-icon youtube"></a>
-            <a href=""><img src="images/icon/Icon-twitter.png" alt="icon-twitter" class="social-icon twitter"></a>
-            <a href=""><img src="images/icon/Icon-twitch.png" alt="icon-twitch" class="social-icon twitch"></a>
+        <div class="price_new">
+          <input
+            type="radio"
+            class="input-radio"
+            id="new"
+            name="typegame"
+            value="digital"
+            checked
+          />
+          <label for="new">New</label>
+          <p>$20</p>
         </div>
-            </div>
-    </footer>
+        <div class="price_used">
+          <input
+            type="radio"
+            class="input-radio"
+            id="used"
+            name="typegame"
+            value="digital"
+            checked
+          />
+          <label for="used">Used</label>
+          <p>$12</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="product-page_bottom">
+        <a class="cta back-button" onclick="history.back()">Back</a>
+        <a class="cta buy-button" href="cart.html">Buy Now</a>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <div>
+      <a href="contact-us.html"><h3 class="footer-links">Contact Us</h3></a>
+      <p>gamehub@hotmail.com</p>
+    </div>
+    <div>
+      <a href="about-us.html"><h3 class="footer-links">About Us</h3></a>
+      <p class="footer-address">
+        Camden town 16<br />
+        0049 London<br />England
+      </p>
+    </div>
+    <div>
+      <h3 class="footer-links">Social</h3>
+      <div class="icons">
+        <a href=""
+          ><img
+            src="images/icon/Icon-facebook.png"
+            alt="icon-facebook"
+            class="social-icon facebook"
+        /></a>
+        <a href=""
+          ><img
+            src="images/icon/Icon-youtube.png"
+            alt="icon-youtube"
+            class="social-icon youtube"
+        /></a>
+        <a href=""
+          ><img
+            src="images/icon/Icon-twitter.png"
+            alt="icon-twitter"
+            class="social-icon twitter"
+        /></a>
+        <a href=""
+          ><img
+            src="images/icon/Icon-twitch.png"
+            alt="icon-twitch"
+            class="social-icon twitch"
+        /></a>
+      </div>
+    </div>
+  </footer>
 </html>
