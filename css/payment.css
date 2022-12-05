@@ -1,103 +1,98 @@
 .payment {
-    margin: 40px 10%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  margin: 40px 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .radio-card {
-    margin-top: 10px;
-
+  margin-top: 10px;
 }
 
 .img-pay {
-    height: 38px;
+  height: 38px;
 }
 .rgt,
 .lft {
-    margin-top: 10px;
-    display:flex;
-    flex-direction: column;
-    align-content: flex-start;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 .address-form_city,
 .address-form {
-    flex-direction: row;
+  flex-direction: row;
 }
 .address-form_city,
 .address-form {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .add-frm {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .city-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .expary-form {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
 }
 .add-frm_add,
 .add-frm_nmbr,
 .exp-cvc_exp,
 .exp-cvc_cvc {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 .exp-cvc_exp {
-    width: 40%;
+  width: 40%;
 }
 .exp-cvc_cvc {
-    width: 25%;
+  width: 25%;
 }
 .city-form_city,
 .add-frm_add {
-    width: 80%;
+  width: 76%;
 }
 .city-form_zip,
 .add-frm_nmbr {
-    width: 18%;
+  width: 22%;
 }
 .cart-empty {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .big-cart {
-    width: 40%;
+  width: 40%;
 }
 .big-p {
-    font-size: 3em;
+  font-size: 3em;
 }
 .circle-cheched {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin-top: 40px;
-    background-color: #0DCC34;
-    
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 40px;
+  background-color: #0dcc34;
 }
 .checked-img {
-    margin: 50px 0 0 7px;
+  margin: 50px 0 0 7px;
 }
 
 @media (max-width: 867px) {
-.payment {
+  .payment {
     display: flex;
     justify-content: center;
-}
-.right-form,
-.left-form {
+  }
+  .right-form,
+  .left-form {
     width: 340px;
-    
-}
-
+  }
 }
