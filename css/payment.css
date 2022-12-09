@@ -10,7 +10,7 @@
 }
 
 .img-pay {
-  height: 38px;
+  height: 36px;
 }
 .rgt,
 .lft {
@@ -84,6 +84,13 @@
 }
 .checked-img {
   margin: 50px 0 0 7px;
+}
+
+/* NEW */
+
+.right-form,
+.left-form {
+  width: 40%;
 }
 
 @media (max-width: 867px) {
