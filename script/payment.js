@@ -24,5 +24,7 @@ const fullName = document.querySelector("#full-name");
 submit.onclick = function () {
   if (fullName.value.length < 10) {
     console.log("write your name!");
+  } else {
+    console.log("OK");
   }
 };
