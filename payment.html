@@ -73,6 +73,10 @@
 
 <form class="all-form">
     <form class="left-form">
+
+        <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub">
+            <label for="sub-pay">Subscribe and pay</label>
+
       <div class="lft name">
         <label for="full-name">Full Name</label>
         <input name="full-name" type="text" id="full-name" placeholder="Name and Last Name" >
@@ -114,13 +118,16 @@
       </div>
     </form>
     <form class="right-form">
-        <div class="radio-card">
+
+        <input type="radio" id="no-sub-pay" name="payment-nosub" value="pay-nosub">
+            <label for="no-sub-pay">Pay without subscribe</label>
+        <!-- <div class="radio-card">
             <input type="radio" id="paypal" name="payment-method" value="paypal">
             <label for="paypal"><img src="images/icon/Icon-paypal.png" class="img-pay"></label>
 
             <input type="radio" id="visa" name="payment-method" value="visa">
             <label for="visa"><img src="images/icon/Icon-visa.png" class="img-pay"></label>
-        </div>
+        </div> -->
         
         <div class="rgt">
             <label for="cardholder">Cardholder's Name</label>

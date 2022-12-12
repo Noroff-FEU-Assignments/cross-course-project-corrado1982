@@ -21,6 +21,7 @@ const expire = document.querySelector("#expire");
 const expireError = document.querySelector("#expire-error");
 const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvv-error");
+const everywere = document.querySelector("main");
 
 function validateInput() {
   event.preventDefault();
@@ -62,14 +63,15 @@ function validateInput() {
   }
 }
 
-fullName.addEventListener("click", validateInput);
-email.addEventListener("click", validateInput);
-address.addEventListener("click", validateInput);
-addNumber.addEventListener("click", validateInput);
-city.addEventListener("click", validateInput);
-zipCode.addEventListener("click", validateInput);
-country.addEventListener("click", validateInput);
-cardHolder.addEventListener("click", validateInput);
-cardNumber.addEventListener("click", validateInput);
-expire.addEventListener("click", validateInput);
-cvv.addEventListener("click", validateInput);
+// fullName.addEventListener("click", validateInput);
+// email.addEventListener("click", validateInput);
+// address.addEventListener("click", validateInput);
+// addNumber.addEventListener("click", validateInput);
+// city.addEventListener("click", validateInput);
+// zipCode.addEventListener("click", validateInput);
+// country.addEventListener("click", validateInput);
+// cardHolder.addEventListener("click", validateInput);
+// cardNumber.addEventListener("click", validateInput);
+// expire.addEventListener("click", validateInput);
+// cvv.addEventListener("click", validateInput);
+everywere.addEventListener("mouseout", validateInput);
