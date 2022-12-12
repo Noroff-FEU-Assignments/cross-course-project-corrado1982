@@ -1,5 +1,5 @@
 const submit = document.querySelector(".buy-button");
-const name = document.querySelector("#full-name");
+// const name = document.querySelector("#full-name");
 const nameError = document.querySelector("#name-error");
 const email = document.querySelector("#email");
 const address = document.querySelector("#address");
@@ -14,18 +14,36 @@ const expire = document.querySelector("#expire");
 const cvv = document.querySelector("#cvv");
 
 const fullName = document.querySelector("#full-name");
+const allInput = document.querySelectorAll("input");
 
-// function validateForm() {
-//   if (fullName.value.length < 10) {
-//     console.log("write your name!");
+// function validateInput() {
+//   event.preventDefault;
+//   if (fullName.value.length === 0 || fullName.value.length > 10) {
+//     nameError.style.display = "none";
+//   } else {
+//     nameError.style.display = "block";
 //   }
+//   console.log(fullName.value.length);
 // }
-// validateForm();
+// email.addEventListener("click", validateInput);
 
-submit.onclick = function () {
-  if (fullName.value.length < 10) {
-    nameError.style.display = "block";
-  } else {
+function validateInput() {
+  event.preventDefault();
+  if (fullName.value.length === 0 || fullName.value.length > 10) {
     nameError.style.display = "none";
+  } else {
+    nameError.style.display = "block";
   }
-};
+}
+
+// function validateInput() {
+//   event.preventDefault();
+//   if (value.trim().length === 0 || value.trim().length > minLen) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+//   console.log(value.length);
+// }
+
+email.addEventListener("click", validateInput);
