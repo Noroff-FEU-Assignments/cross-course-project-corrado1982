@@ -81,30 +81,36 @@
       <div class="lft">
         <label for="email">Email</label>
         <input name="email" type="text" id="email">
+        <div class="error-style" id="email-error">Please enter a valid email</div>
     </div>
       <div class="lft address-form">
        <div class="add-frm_add">
             <label for="address">Address</label>
             <input name="address" type="text" id="address">
+            <div class="error-style" id="address-error">Please enter a valid address</div>
        </div>
        <div class="add-frm_nmbr">
             <label for="address-number">Number</label>
             <input name="address-nember" type="tel" id="address-number"> 
+            <div class="error-style" id="addNumberError">*Nr</div>
        </div>  
       </div>
       <div class="lft address-form_city">
         <div class="city-form city-form_city">
             <label for="city">City</label>
             <input name="city" type="text" id="city">
+            <div class="error-style" id="city-error">Enter your city</div>
         </div>
         <div class="city-form city-form_zip">
             <label for="zip-code">ZIP Code</label>
             <input name="zip-code" type="tel" id="zip-code"> 
+            <div class="error-style" id="zip-error">Zip Code</div>
         </div>  
       </div>
       <div class="lft address-form_country">
         <label for="country">Country</label>
         <input name="country" type="text" id="country">
+        <div class="error-style" id="country-error">Please enter your country</div>
       </div>
     </form>
     <form class="right-form">
@@ -119,15 +125,18 @@
         <div class="rgt">
             <label for="cardholder">Cardholder's Name</label>
             <input name="cardholder" type="text" id="cardholder">
+            <div class="error-style" id="cardholder-error">Please enter the cardholder name</div>
         </div>
         <div class="rgt">
             <label for="card-number">Card Number</label>
             <input name="card-number" type="password" id="card-number">
+            <div class="error-style" id="card-number-error">Please enter card number</div>
         </div>
         <div class="rgt expary-form">
             <div class="exp-cvc_exp">
                 <label for="expire">Expiry Date</label>
                 <input name="expire" type="month" id="expire">
+                <div class="error-style" id="expire-error">*required</div>
             </div>
             <div class="exp-cvc_cvc">
                 <label for="cvc">CVV</label>
