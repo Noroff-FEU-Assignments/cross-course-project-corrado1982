@@ -22,17 +22,6 @@ const expireError = document.querySelector("#expire-error");
 const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvv-error");
 
-// function validateInput() {
-//   event.preventDefault;
-//   if (fullName.value.length === 0 || fullName.value.length > 10) {
-//     nameError.style.display = "none";
-//   } else {
-//     nameError.style.display = "block";
-//   }
-//   console.log(fullName.value.length);
-// }
-// email.addEventListener("click", validateInput);
-
 function validateInput() {
   event.preventDefault();
   if (fullName.value.length === 0 || fullName.value.length > 10) {
@@ -40,18 +29,20 @@ function validateInput() {
   } else {
     nameError.style.display = "block";
   }
+  //EMAIL VALIDATION HERE
+
+  if (address.value.length === 0 || fullName.value.length > 10) {
+    addressError.style.display = "none";
+  } else {
+    addressError.style.display = "block";
+  }
+  // const num1 = addNumber.value;
+  if (addNumber.value.length === 0 || !isNaN(addNumber.value)) {
+    addNumberError.style.display = "none";
+  } else {
+    addNumberError.style.display = "block";
+  }
 }
-
-// function validateInput() {
-//   event.preventDefault();
-//   if (value.trim().length === 0 || value.trim().length > minLen) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-//   console.log(value.length);
-// }
-
 fullName.addEventListener("click", validateInput);
 email.addEventListener("click", validateInput);
 address.addEventListener("click", validateInput);
