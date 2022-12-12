@@ -72,10 +72,13 @@
 <main class="payment">
 
 <form class="all-form">
-    <form class="left-form">
+    
+    
 
+    <div class="left-form">
         <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub">
-            <label for="sub-pay">Subscribe and pay</label>
+        <label for="sub-pay">Subscribe and pay</label>
+        
 
       <div class="lft name">
         <label for="full-name">Full Name</label>
@@ -116,11 +119,11 @@
         <input name="country" type="text" id="country">
         <div class="error-style" id="country-error">Please enter your country</div>
       </div>
-    </form>
-    <form class="right-form">
-
-        <input type="radio" id="no-sub-pay" name="payment-nosub" value="pay-nosub">
-            <label for="no-sub-pay">Pay without subscribe</label>
+    </div>
+    <div class="right-form">
+        <input type="radio" id="no-sub-pay" name="payment-sub" value="pay-nosub">
+        <label for="no-sub-pay">Pay without subscribe</label>
+        
         <!-- <div class="radio-card">
             <input type="radio" id="paypal" name="payment-method" value="paypal">
             <label for="paypal"><img src="images/icon/Icon-paypal.png" class="img-pay"></label>
@@ -151,8 +154,8 @@
                 <div class="error-style" id="cvv-error">*required</div>
             </div>
         </div>
-    </form>
-
+    </div>
+</form>
 </main>
 
         <section class="cart-bottom">       
@@ -162,7 +165,7 @@
               <!-- <a class="cta buy-button" href="congratulation.html">Buy Now</a> -->
             </div>
       </section>
-</form>
+
     </body>
     <footer>
         <div>
