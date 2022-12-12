@@ -76,8 +76,12 @@
     
 
     <div class="left-form">
-        <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub">
-        <label for="sub-pay">Subscribe and pay</label>
+        <div class="radio-button_subnpay">
+            <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub" checked>
+            <label for="sub-pay">Subscribe and pay</label>
+
+        </div>
+       
         
 
       <div class="lft name">
@@ -87,7 +91,7 @@
       </div>
       <div class="lft">
         <label for="email">Email</label>
-        <input name="email" type="text" id="email">
+        <input name="email" type="email" id="email">
         <div class="error-style" id="email-error">Please enter a valid email</div>
     </div>
       <div class="lft address-form">
@@ -121,8 +125,13 @@
       </div>
     </div>
     <div class="right-form">
-        <input type="radio" id="no-sub-pay" name="payment-sub" value="pay-nosub">
-        <label for="no-sub-pay">Pay without subscribe</label>
+        <div class="radio-button_subnpay">
+            <input type="radio" id="no-sub-pay" name="payment-sub" value="pay-nosub">
+            <label for="no-sub-pay">Pay without subscribe</label>
+
+        </div>
+
+        
         
         <!-- <div class="radio-card">
             <input type="radio" id="paypal" name="payment-method" value="paypal">
@@ -139,7 +148,7 @@
         </div>
         <div class="rgt">
             <label for="card-number">Card Number</label>
-            <input name="card-number" type="password" id="card-number">
+            <input name="card-number" type="number" id="card-number">
             <div class="error-style" id="card-number-error">Please enter card number</div>
         </div>
         <div class="rgt expary-form">

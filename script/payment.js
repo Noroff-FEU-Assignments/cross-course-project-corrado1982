@@ -31,6 +31,11 @@ function validateInput() {
     nameError.style.display = "block";
   }
   //EMAIL VALIDATION HERE
+  if (email.value.trim().length === 0 || validateEmail(email.value)) {
+    emailError.style.display = "none";
+  } else {
+    emailError.style.display = "block";
+  }
 
   if (address.value.trim().length === 0 || address.value.trim().length > 10) {
     addressError.style.display = "none";
@@ -61,6 +66,30 @@ function validateInput() {
   } else {
     countryError.style.display = "block";
   }
+  if (
+    cardHolder.value.trim().length === 0 ||
+    cardHolder.value.trim().length > 3
+  ) {
+    cardHolderError.style.display = "none";
+  } else {
+    cardHolderError.style.display = "block";
+  }
+  if (
+    cardNumber.value.trim().length === 0 ||
+    (cardNumber.value.trim().length === 16 && !isNaN(cardNumber.value.trim()))
+  ) {
+    cardNumberError.style.display = "none";
+  } else {
+    cardNumberError.style.display = "block";
+  }
+  if (
+    cvv.value.trim().length === 0 ||
+    (cvv.value.trim().length === 3 && !isNaN(cvv.value.trim()))
+  ) {
+    cvvError.style.display = "none";
+  } else {
+    cvvError.style.display = "block";
+  }
 }
 
 // fullName.addEventListener("click", validateInput);
@@ -75,3 +104,9 @@ function validateInput() {
 // expire.addEventListener("click", validateInput);
 // cvv.addEventListener("click", validateInput);
 everywere.addEventListener("mouseout", validateInput);
+
+function validateEmail(email) {
+  const regEx = /\S+@\S+\.\S+/;
+  const patternMatch = regEx.test(email);
+  return patternMatch;
+}

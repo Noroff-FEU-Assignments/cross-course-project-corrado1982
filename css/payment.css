@@ -9,13 +9,16 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.radio-card {
+.radio-button_subnpay {
+  background-color: #dee1de;
+}
+/* .radio-card {
   margin-top: 10px;
-}
+} */
 
-.img-pay {
+/* .img-pay {
   height: 36px;
-}
+} */
 .rgt,
 .lft {
   margin-top: 10px;
