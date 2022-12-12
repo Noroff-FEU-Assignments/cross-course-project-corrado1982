@@ -1,5 +1,6 @@
 const submit = document.querySelector(".buy-button");
 const name = document.querySelector("#full-name");
+const nameError = document.querySelector("#name-error");
 const email = document.querySelector("#email");
 const address = document.querySelector("#address");
 const addNumber = document.querySelector("#address-number");
@@ -23,8 +24,8 @@ const fullName = document.querySelector("#full-name");
 
 submit.onclick = function () {
   if (fullName.value.length < 10) {
-    console.log("write your name!");
+    nameError.style.display = "block";
   } else {
-    console.log("OK");
+    nameError.style.display = "none";
   }
 };
