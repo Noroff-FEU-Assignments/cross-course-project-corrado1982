@@ -24,25 +24,44 @@ const cvvError = document.querySelector("#cvv-error");
 
 function validateInput() {
   event.preventDefault();
-  if (fullName.value.length === 0 || fullName.value.length > 10) {
+  if (fullName.value.trim().length === 0 || fullName.value.trim().length > 10) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
   }
   //EMAIL VALIDATION HERE
 
-  if (address.value.length === 0 || fullName.value.length > 10) {
+  if (address.value.trim().length === 0 || address.value.trim().length > 10) {
     addressError.style.display = "none";
   } else {
     addressError.style.display = "block";
   }
   // const num1 = addNumber.value;
-  if (addNumber.value.length === 0 || !isNaN(addNumber.value)) {
+  if (addNumber.value.trim().length === 0 || !isNaN(addNumber.value.trim())) {
     addNumberError.style.display = "none";
   } else {
     addNumberError.style.display = "block";
   }
+  if (city.value.trim().length === 0 || city.value.trim().length > 2) {
+    cityError.style.display = "none";
+  } else {
+    cityError.style.display = "block";
+  }
+  if (
+    zipCode.value.trim().length === 0 ||
+    (zipCode.value.trim().length === 4 && !isNaN(zipCode.value.trim()))
+  ) {
+    zipCodeError.style.display = "none";
+  } else {
+    zipCodeError.style.display = "block";
+  }
+  if (country.value.trim().length === 0 || country.value.trim().length > 3) {
+    countryError.style.display = "none";
+  } else {
+    countryError.style.display = "block";
+  }
 }
+
 fullName.addEventListener("click", validateInput);
 email.addEventListener("click", validateInput);
 address.addEventListener("click", validateInput);
