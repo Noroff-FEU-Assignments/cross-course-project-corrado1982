@@ -49,6 +49,9 @@
   display: flex;
   justify-content: space-between;
 }
+.exp-feeld {
+  display: flex;
+}
 .add-frm_add,
 .add-frm_nmbr,
 .exp-cvc_exp,

@@ -22,10 +22,23 @@ const expireError = document.querySelector("#expire-error");
 const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvv-error");
 const everywere = document.querySelector("main");
+const leftForm = document.querySelector(".left-form");
+const radioNoSub = document.querySelector("#no-sub-pay");
+const radioSub = document.querySelector("#sub-pay");
+
+radioNoSub.onclick = function () {
+  leftForm.style.display = "none";
+};
+radioSub.onclick = function () {
+  leftForm.style.display = "block";
+};
 
 function validateInput() {
   event.preventDefault();
-  if (fullName.value.trim().length === 0 || fullName.value.trim().length > 10) {
+  if (
+    validateTextInput(fullName.value, 0, 7)
+    // fullName.value.trim().length === 0 || fullName.value.trim().length > 7
+  ) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
@@ -37,61 +50,91 @@ function validateInput() {
     emailError.style.display = "block";
   }
 
-  if (address.value.trim().length === 0 || address.value.trim().length > 10) {
+  if (
+    validateTextInput(address.value, 0, 5)
+    // address.value.trim().length === 0 || address.value.trim().length > 10
+  ) {
     addressError.style.display = "none";
   } else {
     addressError.style.display = "block";
   }
-  // const num1 = addNumber.value;
+
   if (addNumber.value.trim().length === 0 || !isNaN(addNumber.value.trim())) {
     addNumberError.style.display = "none";
   } else {
     addNumberError.style.display = "block";
   }
-  if (city.value.trim().length === 0 || city.value.trim().length > 2) {
+  if (
+    validateTextInput(city.value, 0, 2)
+    // city.value.trim().length === 0 || city.value.trim().length > 2
+  ) {
     cityError.style.display = "none";
   } else {
     cityError.style.display = "block";
   }
   if (
-    zipCode.value.trim().length === 0 ||
-    (zipCode.value.trim().length === 4 && !isNaN(zipCode.value.trim()))
+    validateNumberInput(zipCode.value, 0, 4)
+    // zipCode.value.trim().length === 0 ||
+    // (zipCode.value.trim().length === 4 && !isNaN(zipCode.value.trim()))
   ) {
     zipCodeError.style.display = "none";
   } else {
     zipCodeError.style.display = "block";
   }
-  if (country.value.trim().length === 0 || country.value.trim().length > 3) {
+  if (
+    validateTextInput(country.value, 0, 3)
+    // country.value.trim().length === 0 || country.value.trim().length > 3
+  ) {
     countryError.style.display = "none";
   } else {
     countryError.style.display = "block";
   }
   if (
-    cardHolder.value.trim().length === 0 ||
-    cardHolder.value.trim().length > 3
+    validateTextInput(cardHolder.value, 0, 3)
+
+    // cardHolder.value.trim().length === 0 ||
+    // cardHolder.value.trim().length > 3
   ) {
     cardHolderError.style.display = "none";
   } else {
     cardHolderError.style.display = "block";
   }
   if (
-    cardNumber.value.trim().length === 0 ||
-    (cardNumber.value.trim().length === 16 && !isNaN(cardNumber.value.trim()))
+    validateNumberInput(cardNumber.value, 0, 16)
+    // cardNumber.value.trim().length === 0 ||
+    // (cardNumber.value.trim().length === 16 && !isNaN(cardNumber.value.trim()))
   ) {
     cardNumberError.style.display = "none";
   } else {
     cardNumberError.style.display = "block";
   }
   if (
-    cvv.value.trim().length === 0 ||
-    (cvv.value.trim().length === 3 && !isNaN(cvv.value.trim()))
+    validateNumberInput(cvv.value, 0, 3)
+    // cvv.value.trim().length === 0 ||
+    // (cvv.value.trim().length === 3 && !isNaN(cvv.value.trim()))
   ) {
     cvvError.style.display = "none";
   } else {
     cvvError.style.display = "block";
   }
 }
-
+function validateTextInput(value, zero, minLen) {
+  if (value.trim().length === zero || value.trim().length > minLen) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function validateNumberInput(value, zero, len) {
+  if (
+    value.trim().length === zero ||
+    (value.trim().length === len && !isNaN(value.trim()))
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 // fullName.addEventListener("click", validateInput);
 // email.addEventListener("click", validateInput);
 // address.addEventListener("click", validateInput);

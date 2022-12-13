@@ -42,10 +42,14 @@
   padding: 10px 40px;
   border-radius: 30px; */
 }
+
 .buy-button,
 .back-button:hover {
   cursor: pointer;
 }
+/* .buy-button:disabled {
+  background-color: gray;
+} */
 .cta-submit {
   width: 60%;
   display: flex;

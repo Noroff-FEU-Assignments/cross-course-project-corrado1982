@@ -70,17 +70,22 @@
 
         </section>
 <main class="payment">
-
+    <div>
+        <div class="radio-button_subnpay">
+            <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub" checked>
+            <label for="sub-pay">Subscribe and pay</label>
+        </div>
+        <div class="radio-button_subnpay">
+            <input type="radio" id="no-sub-pay" name="payment-sub" value="pay-nosub">
+            <label for="no-sub-pay">Pay without subscribe</label>
+        </div>
+    </div>
 <form class="all-form">
     
     
 
     <div class="left-form">
-        <div class="radio-button_subnpay">
-            <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub" checked>
-            <label for="sub-pay">Subscribe and pay</label>
-
-        </div>
+        
        
         
 
@@ -125,11 +130,7 @@
       </div>
     </div>
     <div class="right-form">
-        <div class="radio-button_subnpay">
-            <input type="radio" id="no-sub-pay" name="payment-sub" value="pay-nosub">
-            <label for="no-sub-pay">Pay without subscribe</label>
-
-        </div>
+       
 
         
         
@@ -148,14 +149,40 @@
         </div>
         <div class="rgt">
             <label for="card-number">Card Number</label>
-            <input name="card-number" type="number" id="card-number">
+            <input name="card-number" type="text" id="card-number">
             <div class="error-style" id="card-number-error">Please enter card number</div>
         </div>
         <div class="rgt expary-form">
             <div class="exp-cvc_exp">
                 <label for="expire">Expiry Date</label>
-                <input name="expire" type="month" id="expire">
-                <div class="error-style" id="expire-error">*required</div>
+                <div class="exp-feeld">
+                <select id="expire">
+                    <option value="month">Month</option>
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+                <select id="expire">
+                    <option value="month">Year</option>
+                    <option value="23">2023</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                    <option value="26">2026</option>
+                    <option value="27">2027</option>
+                    <option value="28">2028</option>
+                </select>
+            </div>
+                <!-- <input name="expire" type="month" id="expire">
+                <div class="error-style" id="expire-error">*required</div> -->
             </div>
             <div class="exp-cvc_cvc">
                 <label for="cvc">CVV</label>
