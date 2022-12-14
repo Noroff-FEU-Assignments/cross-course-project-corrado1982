@@ -16,11 +16,6 @@ function validateSubmission() {
   } else {
     emailContactError.style.display = "block";
   }
-  if (textMessage.value.trim().length > 3) {
-    textMessageError.style.display = "block";
-  } else {
-    textMessageError.style.display = "none";
-  }
 }
 
 function validateEmail(email) {
