@@ -1,9 +1,10 @@
 const emailContact = document.querySelector("#e-mail");
 const emailContactError = document.querySelector("#email-contact_error");
 const textMessage = document.querySelector("#text-messsage");
+const textMessageError = document.querySelector("#text-error");
 const subMessageButton = document.querySelector("#submit-message");
 
-textMessage.addEventListener("click", validateSubmission);
+// textMessage.addEventListener("click", validateSubmission);
 subMessageButton.addEventListener("click", validateSubmission);
 
 function validateSubmission() {
@@ -14,6 +15,11 @@ function validateSubmission() {
     emailContactError.style.display = "none";
   } else {
     emailContactError.style.display = "block";
+  }
+  if (textMessage.value.trim().length > 3) {
+    textMessageError.style.display = "block";
+  } else {
+    textMessageError.style.display = "none";
   }
 }
 
