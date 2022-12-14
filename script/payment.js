@@ -21,8 +21,6 @@ const expiryMonth = document.querySelector("#expire-month");
 const expiryMonthError = document.querySelector("#month-error");
 const expirYear = document.querySelector("#expire-year");
 const expirYearError = document.querySelector("#year-error");
-// const expire = document.querySelector("#expire");
-// const expireError = document.querySelector("#expire-error");
 const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvv-error");
 const everywere = document.querySelector("main");
@@ -41,25 +39,19 @@ radioSub.onclick = function () {
 
 function validateInput() {
   event.preventDefault();
-  if (
-    validateTextInput(fullName.value, 0, 7)
-    // fullName.value.trim().length === 0 || fullName.value.trim().length > 7
-  ) {
+  if (validateTextInput(fullName.value, 0, 2)) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
   }
-  //EMAIL VALIDATION HERE
+
   if (email.value.trim().length === 0 || validateEmail(email.value)) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
   }
 
-  if (
-    validateTextInput(address.value, 0, 5)
-    // address.value.trim().length === 0 || address.value.trim().length > 10
-  ) {
+  if (validateTextInput(address.value, 0, 3)) {
     addressError.style.display = "none";
   } else {
     addressError.style.display = "block";
@@ -70,49 +62,35 @@ function validateInput() {
   } else {
     addNumberError.style.display = "block";
   }
-  if (
-    validateTextInput(city.value, 0, 2)
-    // city.value.trim().length === 0 || city.value.trim().length > 2
-  ) {
+  if (validateTextInput(city.value, 0, 2)) {
     cityError.style.display = "none";
   } else {
     cityError.style.display = "block";
   }
-  if (
-    validateNumberInput(zipCode.value, 0, 4)
-    // zipCode.value.trim().length === 0 ||
-    // (zipCode.value.trim().length === 4 && !isNaN(zipCode.value.trim()))
-  ) {
+  if (validateNumberInput(zipCode.value, 0, 4)) {
     zipCodeError.style.display = "none";
   } else {
     zipCodeError.style.display = "block";
   }
-  if (
-    validateTextInput(country.value, 0, 3)
-    // country.value.trim().length === 0 || country.value.trim().length > 3
-  ) {
+  if (validateTextInput(country.value, 0, 3)) {
     countryError.style.display = "none";
   } else {
     countryError.style.display = "block";
   }
-  if (
-    validateTextInput(cardHolder.value, 0, 3)
-
-    // cardHolder.value.trim().length === 0 ||
-    // cardHolder.value.trim().length > 3
-  ) {
+  if (validateTextInput(cardHolder.value, 0, 3)) {
     cardHolderError.style.display = "none";
   } else {
     cardHolderError.style.display = "block";
   }
-  if (
-    validateNumberInput(cardNumber.value, 0, 16)
-    // cardNumber.value.trim().length === 0 ||
-    // (cardNumber.value.trim().length === 16 && !isNaN(cardNumber.value.trim()))
-  ) {
+  if (validateNumberInput(cardNumber.value, 0, 16)) {
     cardNumberError.style.display = "none";
   } else {
     cardNumberError.style.display = "block";
+  }
+  if (validateNumberInput(cvv.value, 0, 3)) {
+    cvvError.style.display = "none";
+  } else {
+    cvvError.style.display = "block";
   }
   // if (expiryMonth.value === "month") {
   //   expiryMonthError.style.display = "block";
@@ -124,15 +102,6 @@ function validateInput() {
   // } else {
   //   expirYearError.style.display = "none";
   // }
-  if (
-    validateNumberInput(cvv.value, 0, 3)
-    // cvv.value.trim().length === 0 ||
-    // (cvv.value.trim().length === 3 && !isNaN(cvv.value.trim()))
-  ) {
-    cvvError.style.display = "none";
-  } else {
-    cvvError.style.display = "block";
-  }
 }
 function validateTextInput(value, zero, minLen) {
   if (value.trim().length === zero || value.trim().length > minLen) {
@@ -151,18 +120,18 @@ function validateNumberInput(value, zero, len) {
     return false;
   }
 }
-// fullName.addEventListener("click", validateInput);
-// email.addEventListener("click", validateInput);
-// address.addEventListener("click", validateInput);
-// addNumber.addEventListener("click", validateInput);
-// city.addEventListener("click", validateInput);
-// zipCode.addEventListener("click", validateInput);
-// country.addEventListener("click", validateInput);
-// cardHolder.addEventListener("click", validateInput);
-// cardNumber.addEventListener("click", validateInput);
+fullName.addEventListener("click", validateInput);
+email.addEventListener("click", validateInput);
+address.addEventListener("click", validateInput);
+addNumber.addEventListener("click", validateInput);
+city.addEventListener("click", validateInput);
+zipCode.addEventListener("click", validateInput);
+country.addEventListener("click", validateInput);
+cardHolder.addEventListener("click", validateInput);
+cardNumber.addEventListener("click", validateInput);
 // expire.addEventListener("click", validateInput);
-// cvv.addEventListener("click", validateInput);
-everywere.addEventListener("mouseout", validateInput);
+cvv.addEventListener("click", validateInput);
+// everywere.addEventListener("mouseout", validateInput);
 
 function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
@@ -170,7 +139,33 @@ function validateEmail(email) {
   return patternMatch;
 }
 submit.onclick = function () {
-  event.preventDefault();
+  // event.preventDefault();
+  if (expiryMonth.value === "month") {
+    expiryMonthError.style.display = "block";
+  } else {
+    expiryMonthError.style.display = "none";
+  }
+  if (expirYear.value === "year") {
+    expirYearError.style.display = "block";
+  } else {
+    expirYearError.style.display = "none";
+  }
+  if (validateTextInput(cardHolder.value, 3, 3)) {
+    cardHolderError.style.display = "none";
+  } else {
+    cardHolderError.style.display = "block";
+  }
+  if (validateNumberInput(cardNumber.value, 16, 16)) {
+    cardNumberError.style.display = "none";
+  } else {
+    cardNumberError.style.display = "block";
+  }
+  if (validateNumberInput(cvv.value, 3, 3)) {
+    cvvError.style.display = "none";
+  } else {
+    cvvError.style.display = "block";
+  }
+
   if (
     expiryMonth.value !== "month" &&
     expirYear.value !== "year" &&
@@ -182,17 +177,20 @@ submit.onclick = function () {
     bodyPayment.style.display = "none";
     payFeedback.style.display = "block";
     //End Experiment
-    expiryMonthError.style.display = "none";
-    expirYearError.style.display = "none";
+    // expiryMonthError.style.display = "none";
+    // expirYearError.style.display = "none";
     console.log("ok");
   } else {
-    if (expiryMonth.value === "month") {
-      expiryMonthError.style.display = "block";
-    }
-    if (expirYear.value === "year") {
-      expirYearError.style.display = "block";
-    }
-
     console.log("not ok");
+  }
+};
+expiryMonth.onclick = function () {
+  if (expiryMonth.value !== "month") {
+    expiryMonthError.style.display = "none";
+  }
+};
+expirYear.onclick = function () {
+  if (expirYear.value !== "year") {
+    expirYearError.style.display = "none";
   }
 };

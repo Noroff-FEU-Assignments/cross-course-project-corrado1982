@@ -141,7 +141,7 @@
         <div class="city-form city-form_zip">
             <label for="zip-code">ZIP Code</label>
             <input name="zip-code" type="tel" id="zip-code" placeholder="1234"> 
-            <div class="error-style" id="zip-error">Zip Code</div>
+            <div class="error-style" id="zip-error">4 numbers</div>
         </div>  
       </div>
       <div class="lft address-form_country">
@@ -166,12 +166,12 @@
         <div class="rgt">
             <label for="cardholder">Cardholder's Name (required)</label>
             <input name="cardholder" type="text" id="cardholder" placeholder="Name of the card owner">
-            <div class="error-style" id="cardholder-error">Please enter the cardholder name</div>
+            <div class="error-style" id="cardholder-error">*Please enter the cardholder name</div>
         </div>
         <div class="rgt">
             <label for="card-number">Card Number (required)</label>
             <input name="card-number" type="text" id="card-number" placeholder="1234-5678-1234-5678">
-            <div class="error-style" id="card-number-error">Please enter card number</div>
+            <div class="error-style" id="card-number-error">*Please enter card number of 16 digits</div>
         </div>
         <div class="rgt expary-form">
             <div class="exp-cvc_exp">
@@ -193,7 +193,7 @@
                     <option value="nov">November</option>
                     <option value="dec">December</option>
                 </select>
-                <div class="error-style" id="month-error">Select month</div>
+                <div class="error-style" id="month-error">*Select month</div>
             </div>
             <div>
                 <select id="expire-year">
@@ -205,7 +205,7 @@
                     <option value="27">2027</option>
                     <option value="28">2028</option>
                 </select>
-                <div class="error-style" id="year-error">Select year</div>
+                <div class="error-style" id="year-error">*Select year</div>
             </div>
             </div>
                 <!-- <input name="expire" type="month" id="expire">
@@ -214,7 +214,7 @@
             <div class="exp-cvc_cvc">
                 <label for="cvc">CVV (required)</label>
                 <input name="cvc" type="text" id="cvv" placeholder="123">
-                <div class="error-style" id="cvv-error">*required</div>
+                <div class="error-style" id="cvv-error">* 3 numbers</div>
             </div>
         </div>
     </div>
