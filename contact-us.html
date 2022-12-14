@@ -67,36 +67,42 @@
         <img src="images/icon/Icon-cart-only.png" alt="cart-only" />
       </a>
     </header>
+    <section id="contact-feedback">
+      Thank you! <br />
+      Your message is sent...
+    </section>
     <main class="contact-textbox">
-      <div class="mail">
-        <label for="e-mail">Your Email address</label>
-        <input
-          type="email"
-          id="e-mail"
-          name="contact"
-          placeholder="youremail@mail.com"
-        />
-        <div class="error-style" id="email-contact_error">
-          *Please enter your email
+      <section id="contact-form">
+        <div class="mail">
+          <label for="e-mail">Your Email address</label>
+          <input
+            type="email"
+            id="e-mail"
+            name="contact"
+            placeholder="youremail@mail.com"
+          />
+          <div class="error-style" id="email-contact_error">
+            *Please enter your email
+          </div>
         </div>
-      </div>
-      <div class="txt">
-        <label for="text-message">Your Question...</label>
-        <textarea
-          id="text-message"
-          name="message"
-          rows="20"
-          cols="30"
-          placeholder="Write here your message"
-        ></textarea>
-        <div class="error-style" id="text-error">
-          *Please enter your message
+        <div class="txt">
+          <label for="text-message">Your Question...</label>
+          <textarea
+            id="text-message"
+            name="message"
+            rows="20"
+            cols="30"
+            placeholder="Write here your message"
+          ></textarea>
+          <div class="error-style" id="text-error">
+            *Please enter your message
+          </div>
         </div>
-      </div>
-      <div>
-        <button id="submit-message" class="cta-submit">Send</button>
-        <!-- <a href="index.html" class="cta-submit">Submit</a> -->
-      </div>
+        <div>
+          <button id="submit-message" class="cta-submit">Send</button>
+          <!-- <a href="index.html" class="cta-submit">Submit</a> -->
+        </div>
+      </section>
     </main>
     <script src="./script/contact.js"></script>
   </body>

@@ -11,9 +11,9 @@
   font-size: 2em;
   color: black;
   margin-top: 70px;
-  background-color: #0dcc34;
-  padding: 22px 91px;
+  background-color: #ffc27c;
   border-radius: 13px;
+  padding: 20px;
 }
 .buy-button {
   border: none;
@@ -57,7 +57,7 @@
   margin: 20px auto;
   font-size: 2em;
   color: black;
-  background-color: #0dcc34;
+  background-color: #ffc27c;
   padding: 15px 5px;
   border-radius: 50px;
   justify-content: center;
