@@ -29,6 +29,8 @@ const everywere = document.querySelector("main");
 const leftForm = document.querySelector(".left-form");
 const radioNoSub = document.querySelector("#no-sub-pay");
 const radioSub = document.querySelector("#sub-pay");
+const bodyPayment = document.querySelector(".body-payment");
+const payFeedback = document.querySelector("#pay-feedback");
 
 radioNoSub.onclick = function () {
   leftForm.style.display = "none";
@@ -176,6 +178,10 @@ submit.onclick = function () {
     validateTextInput(cardHolder.value, 3, 3) &&
     validateNumberInput(cardNumber.value, 16, 16)
   ) {
+    //Experiment
+    bodyPayment.style.display = "none";
+    payFeedback.style.display = "block";
+    //End Experiment
     expiryMonthError.style.display = "none";
     expirYearError.style.display = "none";
     console.log("ok");

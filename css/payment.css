@@ -79,11 +79,15 @@
 .add-frm_nmbr {
   width: 22%;
 }
+#pay-feedback {
+  display: none;
+}
 .cart-empty {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .big-cart {
   width: 40%;
 }
