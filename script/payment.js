@@ -173,12 +173,8 @@ submit.onclick = function () {
     validateTextInput(cardHolder.value, 3, 3) &&
     validateNumberInput(cardNumber.value, 16, 16)
   ) {
-    //Experiment
     bodyPayment.style.display = "none";
     payFeedback.style.display = "block";
-    //End Experiment
-    // expiryMonthError.style.display = "none";
-    // expirYearError.style.display = "none";
     console.log("ok");
   } else {
     console.log("not ok");

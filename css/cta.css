@@ -62,3 +62,10 @@
   border-radius: 50px;
   justify-content: center;
 }
+#submit-message {
+  border: none;
+  font-family: carlito bold;
+}
+#submit-message:hover {
+  cursor: pointer;
+}
