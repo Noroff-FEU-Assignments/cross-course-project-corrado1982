@@ -10,7 +10,10 @@
   flex-wrap: wrap;
 }
 .radio-button_subnpay {
-  background-color: #dee1de;
+  font-size: 20px;
+  background-color: #efba8b;
+  padding: 12px;
+  border-radius: 12px;
 }
 .radios {
   margin: 40px 10%;
