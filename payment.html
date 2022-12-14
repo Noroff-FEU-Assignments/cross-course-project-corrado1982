@@ -69,17 +69,18 @@
             </div>
 
         </section>
+        <div class="radios">
+            <div class="radio-button_subnpay">
+                <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub" checked>
+                <label for="sub-pay">Subscribe and pay</label>
+            </div>
+            <div class="radio-button_subnpay">
+                <input type="radio" id="no-sub-pay" name="payment-sub" value="pay-nosub">
+                <label for="no-sub-pay">Pay without subscribe</label>
+            </div>
+        </div>
 <main class="payment">
-    <div>
-        <div class="radio-button_subnpay">
-            <input type="radio" id="sub-pay" name="payment-sub" value="pay-sub" checked>
-            <label for="sub-pay">Subscribe and pay</label>
-        </div>
-        <div class="radio-button_subnpay">
-            <input type="radio" id="no-sub-pay" name="payment-sub" value="pay-nosub">
-            <label for="no-sub-pay">Pay without subscribe</label>
-        </div>
-    </div>
+    
 <form class="all-form">
     
     
@@ -96,36 +97,36 @@
       </div>
       <div class="lft">
         <label for="email">Email</label>
-        <input name="email" type="email" id="email">
+        <input name="email" type="email" id="email" placeholder="your@email.com">
         <div class="error-style" id="email-error">Please enter a valid email</div>
     </div>
       <div class="lft address-form">
        <div class="add-frm_add">
             <label for="address">Address</label>
-            <input name="address" type="text" id="address">
+            <input name="address" type="text" id="address" placeholder="Street">
             <div class="error-style" id="address-error">Please enter a valid address</div>
        </div>
        <div class="add-frm_nmbr">
             <label for="address-number">Number</label>
-            <input name="address-nember" type="tel" id="address-number"> 
+            <input name="address-nember" type="tel" id="address-number" placeholder="Nr"> 
             <div class="error-style" id="addNumberError">*Nr</div>
        </div>  
       </div>
       <div class="lft address-form_city">
         <div class="city-form city-form_city">
             <label for="city">City</label>
-            <input name="city" type="text" id="city">
+            <input name="city" type="text" id="city" placeholder="City">
             <div class="error-style" id="city-error">Enter your city</div>
         </div>
         <div class="city-form city-form_zip">
             <label for="zip-code">ZIP Code</label>
-            <input name="zip-code" type="tel" id="zip-code"> 
+            <input name="zip-code" type="tel" id="zip-code" placeholder="1234"> 
             <div class="error-style" id="zip-error">Zip Code</div>
         </div>  
       </div>
       <div class="lft address-form_country">
         <label for="country">Country</label>
-        <input name="country" type="text" id="country">
+        <input name="country" type="text" id="country" placeholder="Country">
         <div class="error-style" id="country-error">Please enter your country</div>
       </div>
     </div>
@@ -143,20 +144,21 @@
         </div> -->
         
         <div class="rgt">
-            <label for="cardholder">Cardholder's Name</label>
-            <input name="cardholder" type="text" id="cardholder">
+            <label for="cardholder">Cardholder's Name (required)</label>
+            <input name="cardholder" type="text" id="cardholder" placeholder="Name of the card owner">
             <div class="error-style" id="cardholder-error">Please enter the cardholder name</div>
         </div>
         <div class="rgt">
-            <label for="card-number">Card Number</label>
-            <input name="card-number" type="text" id="card-number">
+            <label for="card-number">Card Number (required)</label>
+            <input name="card-number" type="text" id="card-number" placeholder="1234-5678-1234-5678">
             <div class="error-style" id="card-number-error">Please enter card number</div>
         </div>
         <div class="rgt expary-form">
             <div class="exp-cvc_exp">
-                <label for="expire">Expiry Date</label>
+                <label for="expire">Expiry Date (required)</label>
                 <div class="exp-feeld">
-                <select id="expire">
+            <div>
+                <select id="expire-month">
                     <option value="month">Month</option>
                     <option value="jan">January</option>
                     <option value="feb">February</option>
@@ -171,8 +173,11 @@
                     <option value="nov">November</option>
                     <option value="dec">December</option>
                 </select>
-                <select id="expire">
-                    <option value="month">Year</option>
+                <div class="error-style" id="month-error">Select month</div>
+            </div>
+            <div>
+                <select id="expire-year">
+                    <option value="year">Year</option>
                     <option value="23">2023</option>
                     <option value="24">2024</option>
                     <option value="25">2025</option>
@@ -180,13 +185,15 @@
                     <option value="27">2027</option>
                     <option value="28">2028</option>
                 </select>
+                <div class="error-style" id="year-error">Select year</div>
+            </div>
             </div>
                 <!-- <input name="expire" type="month" id="expire">
                 <div class="error-style" id="expire-error">*required</div> -->
             </div>
             <div class="exp-cvc_cvc">
-                <label for="cvc">CVV</label>
-                <input name="cvc" type="text" id="cvv">
+                <label for="cvc">CVV (required)</label>
+                <input name="cvc" type="text" id="cvv" placeholder="123">
                 <div class="error-style" id="cvv-error">*required</div>
             </div>
         </div>

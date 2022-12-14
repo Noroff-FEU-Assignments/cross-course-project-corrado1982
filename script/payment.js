@@ -17,8 +17,12 @@ const cardHolder = document.querySelector("#cardholder");
 const cardHolderError = document.querySelector("#cardholder-error");
 const cardNumber = document.querySelector("#card-number");
 const cardNumberError = document.querySelector("#card-number-error");
-const expire = document.querySelector("#expire");
-const expireError = document.querySelector("#expire-error");
+const expiryMonth = document.querySelector("#expire-month");
+const expiryMonthError = document.querySelector("#month-error");
+const expirYear = document.querySelector("#expire-year");
+const expirYearError = document.querySelector("#year-error");
+// const expire = document.querySelector("#expire");
+// const expireError = document.querySelector("#expire-error");
 const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvv-error");
 const everywere = document.querySelector("main");
@@ -108,6 +112,16 @@ function validateInput() {
   } else {
     cardNumberError.style.display = "block";
   }
+  // if (expiryMonth.value === "month") {
+  //   expiryMonthError.style.display = "block";
+  // } else {
+  //   expiryMonthError.style.display = "none";
+  // }
+  // if (expirYear.value === "year") {
+  //   expirYearError.style.display = "block";
+  // } else {
+  //   expirYearError.style.display = "none";
+  // }
   if (
     validateNumberInput(cvv.value, 0, 3)
     // cvv.value.trim().length === 0 ||
@@ -153,3 +167,26 @@ function validateEmail(email) {
   const patternMatch = regEx.test(email);
   return patternMatch;
 }
+submit.onclick = function () {
+  event.preventDefault();
+  if (
+    expiryMonth.value !== "month" &&
+    expirYear.value !== "year" &&
+    validateNumberInput(cvv.value, 3, 3) &&
+    validateTextInput(cardHolder.value, 3, 3) &&
+    validateNumberInput(cardNumber.value, 16, 16)
+  ) {
+    expiryMonthError.style.display = "none";
+    expirYearError.style.display = "none";
+    console.log("ok");
+  } else {
+    if (expiryMonth.value === "month") {
+      expiryMonthError.style.display = "block";
+    }
+    if (expirYear.value === "year") {
+      expirYearError.style.display = "block";
+    }
+
+    console.log("not ok");
+  }
+};

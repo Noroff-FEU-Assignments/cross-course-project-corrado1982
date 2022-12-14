@@ -12,6 +12,12 @@
 .radio-button_subnpay {
   background-color: #dee1de;
 }
+.radios {
+  margin: 40px 10%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 /* .radio-card {
   margin-top: 10px;
 } */
