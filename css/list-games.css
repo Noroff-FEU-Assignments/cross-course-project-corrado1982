@@ -1,0 +1,12 @@
+.ps5-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-background {
+  margin: 20px;
+  width: 260px;
+  background-color: #ffc27c;
+}
+.item-img {
+  width: 150px;
+}

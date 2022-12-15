@@ -150,3 +150,19 @@ const games = [
       "Assassin is a game where you can challange your ability alone or with friends.",
   },
 ];
+console.log("ok");
+const htmlContainer = document.querySelector(".ps5-page");
+
+for (let i = 0; i < games.length; i++) {
+  let nameGame = games[i].title;
+  let cover = games[i].image;
+  let priceNew = games[i].newPrice;
+  let priceUsed = games[i].usedPrice;
+  let priceDigital = games[i].digitalPrice;
+
+  htmlContainer.innerHTML += `<div class="cards-background" >
+  <h4>${nameGame}</h4>
+  <img src="${cover}" alt="image of${nameGame}" class="item-img">
+  </div>
+  `;
+}
