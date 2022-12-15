@@ -1,6 +1,6 @@
 export const games = [
   {
-    id: 01,
+    id: 1,
     title: "Furious",
     image: "images/games img/cover-furious.jpg",
     pXboxOne: true,
@@ -16,7 +16,7 @@ export const games = [
       "Furious is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 02,
+    id: 2,
     title: "Super Duper",
     image: "images/games img/cover-superduper.jpg",
     pXboxOne: true,
@@ -32,7 +32,7 @@ export const games = [
       "Super Duper is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 03,
+    id: 3,
     title: "Boxer",
     image: "images/games img/cover-boxer.jpg",
     pXboxOne: true,
@@ -48,7 +48,7 @@ export const games = [
       "Boxer is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 04,
+    id: 4,
     title: "Cyberpunk",
     image: "images/games img/cover-cyberpunk.jpg",
     pXboxOne: true,
@@ -64,7 +64,7 @@ export const games = [
       "Cyberpunk is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 05,
+    id: 5,
     title: "Forgelegend",
     image: "images/games img/cover-forgelegend.jpg",
     pXboxOne: true,
@@ -80,7 +80,7 @@ export const games = [
       "Forgelegend is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 06,
+    id: 6,
     title: "Ping Pong",
     image: "images/games img/cover-pingpong.jpg",
     pXboxOne: true,
@@ -96,7 +96,7 @@ export const games = [
       "Ping Pong is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 07,
+    id: 7,
     title: "Racing",
     image: "images/games img/cover-racing.jpg",
     pXboxOne: true,
@@ -112,7 +112,7 @@ export const games = [
       "Racing is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 08,
+    id: 8,
     title: "Space War",
     image: "images/games img/cover-spacewar.jpg",
     pXboxOne: true,
@@ -128,7 +128,7 @@ export const games = [
       "Space War is a game where you can challange your ability alone or with friends.",
   },
   {
-    id: 09,
+    id: 9,
     title: "Black",
     image: "images/games img/cover-black.jpg",
     pXboxOne: true,
