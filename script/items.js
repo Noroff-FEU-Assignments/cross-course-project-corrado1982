@@ -1,4 +1,4 @@
-const games = [
+export const games = [
   {
     id: 01,
     title: "Furious",
@@ -169,13 +169,13 @@ for (let i = 0; i < games.length; i++) {
   let priceNew = games[i].newPrice;
   let priceUsed = games[i].usedPrice;
   let priceDigital = games[i].digitalPrice;
-  let descript = games[i].description;
+  //   let descript = games[i].description;
 
   if (games[i].pPs5 === false) {
     continue;
   }
 
-  htmlContainer.innerHTML += `<a class="cards-background" >
+  htmlContainer.innerHTML += `<a href="detail.html?id=${games[i].id}" class="cards-background" >
   <h4 class="title-card">${nameGame}</h4>
   <img src="${cover}" alt="image of${nameGame}" class="item-img">
   <p>New: ${priceNew}</p>
