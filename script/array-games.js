@@ -6,7 +6,7 @@ export const games = [
     pXboxOne: true,
     pXbox: true,
     pPs4: true,
-    pPs5: false,
+    pPs5: true,
     pNintendo: true,
     pPc: true,
     newPrice: 16,

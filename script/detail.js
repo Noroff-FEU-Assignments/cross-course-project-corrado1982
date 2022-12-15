@@ -1,5 +1,5 @@
 import { games } from "./array-games.js";
-console.log("ciao");
+
 const detailLeft = document.querySelector(".product-page_left");
 
 const queryString = document.location.search;
