@@ -1,4 +1,4 @@
-export const games = [
+const games = [
   {
     id: 01,
     title: "Furious",
