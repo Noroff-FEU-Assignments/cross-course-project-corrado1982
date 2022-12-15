@@ -7,6 +7,15 @@
   width: 260px;
   background-color: #ffc27c;
 }
+.title-card {
+  text-align: center;
+}
+.cards-background p {
+  display: flex;
+  justify-content: space-evenly;
+}
 .item-img {
   width: 150px;
+  margin: 0 auto;
+  display: flex;
 }
