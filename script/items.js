@@ -1,5 +1,6 @@
 const games = [
   {
+    id: 01,
     title: "Furious",
     image: "images/games img/cover-furious.jpg",
     pXboxOne: true,
@@ -15,6 +16,7 @@ const games = [
       "Furious is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 02,
     title: "Super Duper",
     image: "images/games img/cover-superduper.jpg",
     pXboxOne: true,
@@ -30,6 +32,7 @@ const games = [
       "Super Duper is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 03,
     title: "Boxer",
     image: "images/games img/cover-boxer.jpg",
     pXboxOne: true,
@@ -45,6 +48,7 @@ const games = [
       "Boxer is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 04,
     title: "Cyberpunk",
     image: "images/games img/cover-cyberpunk.jpg",
     pXboxOne: true,
@@ -60,6 +64,7 @@ const games = [
       "Cyberpunk is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 05,
     title: "Forgelegend",
     image: "images/games img/cover-forgelegend.jpg",
     pXboxOne: true,
@@ -75,6 +80,7 @@ const games = [
       "Forgelegend is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 06,
     title: "Ping Pong",
     image: "images/games img/cover-pingpong.jpg",
     pXboxOne: true,
@@ -90,6 +96,7 @@ const games = [
       "Ping Pong is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 07,
     title: "Racing",
     image: "images/games img/cover-racing.jpg",
     pXboxOne: true,
@@ -105,6 +112,7 @@ const games = [
       "Racing is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 08,
     title: "Space War",
     image: "images/games img/cover-spacewar.jpg",
     pXboxOne: true,
@@ -120,6 +128,7 @@ const games = [
       "Space War is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 09,
     title: "Black",
     image: "images/games img/cover-black.jpg",
     pXboxOne: true,
@@ -135,6 +144,7 @@ const games = [
       "Black is a game where you can challange your ability alone or with friends.",
   },
   {
+    id: 10,
     title: "Assassin",
     image: "images/games img/cover-assassins.jpg",
     pXboxOne: true,
@@ -165,13 +175,13 @@ for (let i = 0; i < games.length; i++) {
     continue;
   }
 
-  htmlContainer.innerHTML += `<div class="cards-background" >
+  htmlContainer.innerHTML += `<a class="cards-background" >
   <h4 class="title-card">${nameGame}</h4>
   <img src="${cover}" alt="image of${nameGame}" class="item-img">
   <p>New: ${priceNew}</p>
   <p>Used: ${priceUsed}</p>
   <p>Digital: ${priceDigital}</p>
   
-  </div>
+  </a>
   `;
 }
