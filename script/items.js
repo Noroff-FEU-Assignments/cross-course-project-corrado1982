@@ -164,7 +164,7 @@
 import { games } from "./array-games.js";
 console.log("ok");
 const htmlContainer = document.querySelector(".ps5-page");
-const detailLeft = document.querySelector(".product-page_left");
+// const detailLeft = document.querySelector(".product-page_left");
 
 for (let i = 0; i < games.length; i++) {
   let nameGame = games[i].title;
@@ -174,16 +174,15 @@ for (let i = 0; i < games.length; i++) {
   let priceDigital = games[i].digitalPrice;
   //   let descript = games[i].description;
 
-  if (games[i].pPs5 === false) {
-    continue;
-  }
+  // if (games[i].pPs5 === false) {
+  //   continue;
+  // }
 
   htmlContainer.innerHTML += `<a href="detail.html?id=${games[i].id}" class="cards-background" >
   <h4 class="title-card">${nameGame}</h4>
   <img src="${cover}" alt="image of${nameGame}" class="item-img">
-  <p>New: ${priceNew}</p>
-  <p>Used: ${priceUsed}</p>
-  <p>Digital: ${priceDigital}</p>
+  <p>New: ${priceNew} $</p>
+  <p>Digital: ${priceDigital} $</p>
   
   </a>
   `;

@@ -1,14 +1,22 @@
 .ps5-page {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .cards-background {
-  margin: 20px;
-  width: 260px;
+  border-radius: 15px;
+  margin: 20px 60px;
+  width: 160px;
   background-color: #ffc27c;
 }
+.cards-background p {
+  font-size: 1.5em;
+  margin: 0;
+}
 .title-card {
+  font-size: 1.5em;
   text-align: center;
+  margin: 0;
 }
 .cards-background p {
   display: flex;
