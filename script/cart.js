@@ -9,7 +9,8 @@ const index = id - 1;
 
 console.log(id);
 console.log("ciao");
-// detailLeft.innerHTML = `<img class="product-page_image" src="${games[index].image}" alt="image of${games[index].title}" class="item-img">
-// <h3>${games[index].title}</h3>
-// <p class="game-description">${games[index].description}</p>
-// `;
+leftCart.innerHTML = `
+<h3>${games[index].title}</h3>
+<img class="cart-image" src="${games[index].image}" alt="image of${games[index].title}" class="item-img">
+
+`;

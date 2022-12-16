@@ -21,6 +21,10 @@
   text-align: center;
   margin-top: 40px;
 }
+.cart-image {
+  max-width: 200px;
+  display: flex;
+}
 .left-cart h3 {
   display: flex;
   margin-bottom: 0;
@@ -45,10 +49,10 @@
 .right-cart .p-plus {
   margin-bottom: 0;
 }
-.img-assassin {
+/* .img-assassin {
   display: flex;
   width: 30%;
-}
+} */
 .cart-main {
   display: flex;
   justify-content: space-around;
