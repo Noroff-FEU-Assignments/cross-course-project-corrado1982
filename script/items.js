@@ -160,9 +160,11 @@
 //       "Assassin is a game where you can challange your ability alone or with friends.",
 //   },
 // ];
+
 import { games } from "./array-games.js";
 console.log("ok");
 const htmlContainer = document.querySelector(".ps5-page");
+const detailLeft = document.querySelector(".product-page_left");
 
 for (let i = 0; i < games.length; i++) {
   let nameGame = games[i].title;
@@ -185,4 +187,10 @@ for (let i = 0; i < games.length; i++) {
   
   </a>
   `;
+  console.log(games[i]);
 }
+console.log("prova");
+// function insertPicture() {
+//   detailLeft.innerHTML = `<img src="${cover}" alt="image of${nameGame}" class="item-img">`;
+// }
+// insertPicture();

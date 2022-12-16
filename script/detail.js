@@ -4,9 +4,15 @@ const detailLeft = document.querySelector(".product-page_left");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const idGame = params.get("id");
-const id = idGame - 1;
+const id = params.get("id");
+const index = id - 1;
 
-console.log(idGame);
-console.log(games[id]);
-detailLeft.innerHTML = `<img src="${games[id].image}" alt="image of${games[id].title}" class="item-img">`;
+// const idGame = params.get("id");
+// const id = idGame - 1;
+
+console.log(id);
+// console.log(games[id]);
+detailLeft.innerHTML = `<img class="product-page_image" src="${games[index].image}" alt="image of${games[index].title}" class="item-img">
+<h3>${games[index].title}</h3>
+<p class="game-description">${games[index].description}</p>
+`;
