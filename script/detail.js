@@ -20,6 +20,9 @@ detailLeft.innerHTML = `<img class="product-page_image" src="${foundGame.image}"
               <p class="game-description">${foundGame.description}</p>
       `;
 addToCart.innerHTML += `<a href="cart.html?id=${foundGame.id}" class="cta buy-button">Add to cart</a>`;
+addToCart.onclick = function () {
+  localStorage.setItem("foundGame", JSON.stringify(foundGame));
+};
 //try
 // addToCart.forEach((button) => {
 //   button.addEventListener("click", collectGames);
@@ -28,9 +31,6 @@ addToCart.innerHTML += `<a href="cart.html?id=${foundGame.id}" class="cta buy-bu
 //   localStorage.setItem("foundGame", JSON.stringify(foundGame));
 // }
 //TIL HERE
-addToCart.onclick = function () {
-  localStorage.setItem("foundGame", JSON.stringify(foundGame));
-};
 
 //OLD
 // for (let i = 0; i < games.length; i++) {

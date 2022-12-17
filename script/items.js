@@ -162,8 +162,9 @@
 // ];
 
 import { games } from "./array-games.js";
-console.log("ok");
+
 const htmlContainer = document.querySelector(".ps5-page");
+const addCart = document.querySelector("#add-cart");
 // const detailLeft = document.querySelector(".product-page_left");
 
 for (let i = 0; i < games.length; i++) {
@@ -183,11 +184,14 @@ for (let i = 0; i < games.length; i++) {
   <img src="${cover}" alt="image of${nameGame}" class="item-img">
   <p>New: ${priceNew} $</p>
   <p>Digital: ${priceDigital} $</p>
-  
   </a>
   `;
+
   console.log(games[i]);
 }
+
+// PROVA;
+
 // function insertPicture() {
 //   detailLeft.innerHTML = `<img src="${cover}" alt="image of${nameGame}" class="item-img">`;
 // }
