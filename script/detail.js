@@ -1,6 +1,4 @@
 import { games } from "./array-games.js";
-import { foundGame } from "./to-find.js";
-import { findGame } from "./to-find.js";
 
 const detailLeft = document.querySelector(".product-page_left");
 const addToCart = document.querySelector("#add-cart_detailpage");
@@ -9,13 +7,13 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-// const foundGame = games.find(findGame);
+const foundGame = games.find(findGame);
 
-// function findGame(foundGame) {
-//   if (foundGame.id == id) {
-//     return foundGame.id;
-//   }
-// }
+function findGame(foundGame) {
+  if (foundGame.id == id) {
+    return foundGame.id;
+  }
+}
 
 detailLeft.innerHTML = `<img class="product-page_image" src="${foundGame.image}" alt="image of${foundGame.title}" class="item-img">
               <h3>${foundGame.title}</h3>

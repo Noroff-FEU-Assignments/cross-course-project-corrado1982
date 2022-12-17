@@ -8,13 +8,18 @@ const total = document.querySelector(".cart-total");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const index = id - 1;
 
-console.log(id);
-console.log("ciao");
-leftCart.innerHTML = `
-<h3>${games[index].title}</h3>
-<img class="cart-image" src="${games[index].image}" alt="image of${games[index].title}" class="item-img">
+const foundGame = games.find(findGame);
+
+function findGame(foundGame) {
+  if (foundGame.id == id) {
+    return foundGame.id;
+  }
+}
+
+leftCart.innerHTML += `
+<h3>${foundGame.title}</h3>
+<img class="cart-image" src="${foundGame.image}" alt="image of${foundGame.title}" class="item-img">
 `;
 
 // price.innerHTML = `<p class="p-plus">${games[index].newPrice}</p>`;
