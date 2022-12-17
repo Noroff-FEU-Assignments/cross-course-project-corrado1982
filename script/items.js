@@ -188,7 +188,6 @@ for (let i = 0; i < games.length; i++) {
   `;
   console.log(games[i]);
 }
-console.log("prova");
 // function insertPicture() {
 //   detailLeft.innerHTML = `<img src="${cover}" alt="image of${nameGame}" class="item-img">`;
 // }
