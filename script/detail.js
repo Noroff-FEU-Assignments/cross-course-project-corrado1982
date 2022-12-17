@@ -19,7 +19,20 @@ detailLeft.innerHTML = `<img class="product-page_image" src="${foundGame.image}"
               <h3>${foundGame.title}</h3>
               <p class="game-description">${foundGame.description}</p>
       `;
-addToCart.innerHTML = `<a href="cart.html?id=${foundGame.id}" class="cta buy-button">Add to cart</a>`;
+addToCart.innerHTML += `<a href="cart.html?id=${foundGame.id}" class="cta buy-button">Add to cart</a>`;
+//try
+// addToCart.forEach((button) => {
+//   button.addEventListener("click", collectGames);
+// });
+// function collectGames() {
+//   localStorage.setItem("foundGame", JSON.stringify(foundGame));
+// }
+//TIL HERE
+addToCart.onclick = function () {
+  localStorage.setItem("foundGame", JSON.stringify(foundGame));
+};
+
+//OLD
 // for (let i = 0; i < games.length; i++) {
 //   if (games[i].id == id) {
 //     detailLeft.innerHTML = `<img class="product-page_image" src="${games[i].image}" alt="image of${games[i].title}" class="item-img">
