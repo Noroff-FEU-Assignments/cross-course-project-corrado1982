@@ -2,6 +2,7 @@ import { games } from "./array-games.js";
 
 const detailLeft = document.querySelector(".product-page_left");
 const addToCart = document.querySelector("#add-cart_detailpage");
+const breadCrubName = document.querySelector(".this-game");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -14,7 +15,7 @@ function findGame(foundGame) {
     return foundGame.id;
   }
 }
-
+// breadCrubName.innerHTML = `${foundGame.title}`;
 detailLeft.innerHTML = `<img class="product-page_image" src="${foundGame.image}" alt="image of${foundGame.title}" class="item-img">
               <h3>${foundGame.title}</h3>
               <p class="game-description">${foundGame.description}</p>

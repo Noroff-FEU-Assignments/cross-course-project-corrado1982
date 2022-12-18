@@ -105,7 +105,20 @@ h3 {
   font-size: 2em;
   margin-top: 5px;
 }
-
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  color: #808080;
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #ff4809;
+  content: "/\00a0";
+}
 .product {
   display: block;
   background-color: #ffc27c;
@@ -113,6 +126,14 @@ h3 {
   border-radius: 15px;
   width: 166px;
   height: 300px;
+}
+ul.breadcrumb li a {
+  color: #ff4809;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #ffc27c;
+  text-decoration: underline;
 }
 .p-plus {
   font-size: 1.5em;

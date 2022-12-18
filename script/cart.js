@@ -8,7 +8,7 @@ const removeItem = document.querySelector(".remove-item");
 const removeAll = document.querySelector(".cart-filled");
 const cartIcon = document.querySelector(".cart-icon");
 const empltyMessage = document.querySelector(".empty-message");
-
+const breadCrubName = document.querySelector(".this-game");
 // const queryString = document.location.search;
 // const params = new URLSearchParams(queryString);
 // const id = params.get("id");
@@ -29,7 +29,7 @@ if (parsedSrorage === null) {
 } else {
   empltyMessage.style.display = "none";
 }
-
+//breadCrubName.innerHTML = `<a href"detail.html?id=${parsedSrorage.id}>${parsedSrorage.title}</a>`;
 leftCart.innerHTML += `
 <h3>${parsedSrorage.title}</h3>
 <img class="cart-image" src="${parsedSrorage.image}" alt="image of${parsedSrorage.title}" class="item-img">
