@@ -13,31 +13,30 @@ async function fetchApi() {
 
   for (let i = 0; i < data.length; i++) {
     let nameGame = data[i].name;
-    let cover = data[i].images[0];
+    let cover = data[i].images[0].src;
+    let price = data[i].prices.price;
+    let category = data[i].categories[0].slug;
 
     console.log(nameGame);
     console.log(cover);
+    console.log(price);
+    console.log(category);
   }
 }
-
 fetchApi()
-
-
-
 //   let cover = data[i].image;
 //   let priceNew = data[i].newPrice;
 //   let priceDigital = data[i].digitalPrice;
   
-
-//   if (games[i].hotDeals === true) {
-//     hotDeals.innerHTML += `<a href="detail.html?id=${games[i].id}" class="cards-background" >
+//   if (category == most-sold) {
+//     hotDeals.innerHTML += `<a href="detail.html?id=${nameGame}" class="cards-background" >
 //   <h4 class="title-card">${nameGame}</h4>
 //   <img src="${cover}" alt="image of${nameGame}" class="item-img">
 //   <p>New: ${priceNew} $</p>
 //   <p>Digital: ${priceDigital} $</p>
   
-//   </a>
-//   `;
+// //   </a>
+// //   `;
 //   }
 //   if (games[i].mostSold === true) {
 //     mostSold.innerHTML += `<a href="detail.html?id=${games[i].id}" class="cards-background" >
