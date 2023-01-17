@@ -2,7 +2,7 @@
 // console.log("ok");
 
 const url = "https://issimo.one/games-hub/wp-json/wc/store/products";
-// const mostSold = document.querySelector(".most-sold-row");
+const mostSold = document.querySelector(".most-sold-row");
 // const hotDeals = document.querySelector(".hot-deals-row");
 // const newArrived = document.querySelector(".new-arrived-row");
 
@@ -15,20 +15,39 @@ async function fetchApi() {
     let nameGame = data[i].name;
     let cover = data[i].images[0].src;
     let price = data[i].prices.price;
-    let category = data[i].categories[0].slug;
-
+    
+    
+    for(let a = 0; a < data[i].categories.length; a++) {
+    let mostSoldCategory = "";
+    let category = data[i].categories[a].id;
     console.log(nameGame);
     console.log(cover);
     console.log(price);
     console.log(category);
+
+    if (category === 22) {
+      mostSoldCategory = true;
+    }
+
+
+    if (mostSoldCategory) {
+      console.log("funge");
+      mostSold.innerHTML += `<a href="detail.html?id=${data[i].id}" class="cards-background" >
+     <h4 class="title-card">${nameGame}</h4>
+     <img src="${cover}" alt="image of${nameGame}" class="item-img">
+     <p>New: ${price} $</p>
+     <p>Digital: ${price} $</p>
+        
+      </a>
+       `;
+    }
+    }}
   }
-}
+
 fetchApi()
-//   let cover = data[i].image;
-//   let priceNew = data[i].newPrice;
-//   let priceDigital = data[i].digitalPrice;
   
 //   if (category == most-sold) {
+//     console.log("funge")
 //     hotDeals.innerHTML += `<a href="detail.html?id=${nameGame}" class="cards-background" >
 //   <h4 class="title-card">${nameGame}</h4>
 //   <img src="${cover}" alt="image of${nameGame}" class="item-img">
