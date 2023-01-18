@@ -44,7 +44,7 @@ detailLeft.innerHTML = `<img class="product-page_image" src="${data.images[0].sr
       `;
 addToCart.innerHTML += `<a href="cart.html?id=${data.id}" class="cta buy-button">Add to cart</a>`;
 addToCart.onclick = function () {
-  localStorage.setItem("data", JSON.stringify(data));
+  localStorage.setItem("dataStored", JSON.stringify(data));
 }
 ;}
 fetchApi();
