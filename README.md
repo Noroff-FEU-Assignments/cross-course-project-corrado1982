@@ -2,7 +2,8 @@
 
 ![gameshub](https://user-images.githubusercontent.com/104769882/222128240-e6272aa0-c515-4404-8f91-67013645316c.png)
 
-##Description
+## Description
+
 Game Hub website is selling new and used videogames for different platforms.
 
 ## Built with
