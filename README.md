@@ -33,7 +33,7 @@ npm run start
 ```
 ## Contributing
 
-Your contibution can be a styiling with CSS to make the site more appealing.
+Your contibution can be to add a search bar.
 
 ## Contact
 
