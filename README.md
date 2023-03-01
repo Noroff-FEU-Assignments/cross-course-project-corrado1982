@@ -1,3 +1,40 @@
-# cross-course-project-corrado1982 <br>
-cross-course-project-corrado1982 created by GitHub Classroom <br>
-This is the classroom responsitory, here I will upload files and folders for my project 
+# Game Hub
+
+![gameshub](https://user-images.githubusercontent.com/104769882/222128240-e6272aa0-c515-4404-8f91-67013645316c.png)
+
+Game Hub website is selling new and used videogames for different platforms.
+
+## Built with
+
+- HTML
+- CSS
+- Javascript
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone github.com/Noroff-FEU-Assignments/cross-course-project-corrado1982.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+```bash
+npm run start
+```
+## Contributing
+
+Your contibution can be a styiling with CSS to make the site more appealing.
+
+## Contact
+
+[My LinkedIn page](https://www.linkedin.com/in/corrado-rofi-66b073128)
