@@ -21,6 +21,7 @@ Is selling for both digital and phisical format.
 - HTML
 - CSS
 - Javascript
+- Wordpress
 
 ## Getting Started
 
